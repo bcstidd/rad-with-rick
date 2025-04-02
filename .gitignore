@@ -1,0 +1,16 @@
+# Node modules
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local env files
+.env
+
+# Vite output
+dist/
+
+# macOS
+.DS_Store
