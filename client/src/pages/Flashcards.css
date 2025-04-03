@@ -214,7 +214,8 @@
     margin-top: 1rem;
     cursor: pointer;
     transition: transform 0.2s ease, filter 0.2s ease;
-    display: inline-block;
+    display: flex;
+    align-self: flex-start;
     vertical-align: middle;
     filter: grayscale(20%);
   }
