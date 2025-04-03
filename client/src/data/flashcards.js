@@ -1,502 +1,502 @@
 const flashcards = [
     {
-      "question": "What does ALARA stand for?",
-      "answer": "As Low As Reasonably Achievable",
+      "question": "What is the function of the collimator in an x-ray tubehead?",
+      "answer": "Restricts the size of the x-ray beam",
       "options": [
-        "As Long As Radiation Acts",
-        "All Levels Are Really Acceptable",
-        "As Low As Reasonably Achievable",
-        "Always Limit All Radiation Application"
+        "Increases contrast",
+        "Removes scatter radiation",
+        "Restricts the size of the x-ray beam",
+        "Measures radiation exposure"
       ]
     },
     {
-      "question": "What is the purpose of a bitewing radiograph?",
-      "answer": "To detect interproximal decay and bone levels",
+      "question": "Which radiograph provides a broad view of the jaws, teeth, and sinuses?",
+      "answer": "Panoramic radiograph",
       "options": [
-        "To capture impacted teeth",
-        "To detect interproximal decay and bone levels",
-        "To visualize nasal cavities",
-        "To track root canal treatment"
+        "Cephalometric radiograph",
+        "Periapical radiograph",
+        "Panoramic radiograph",
+        "Bitewing radiograph"
       ]
     },
     {
-      "question": "Which tissue is most sensitive to radiation?",
-      "answer": "Reproductive tissue",
+      "question": "What error results in a 'cone cut' on the image?",
+      "answer": "Improper alignment of the PID",
+      "options": [
+        "Underexposure",
+        "Film bending",
+        "Improper alignment of the PID",
+        "Improper processing"
+      ]
+    },
+    {
+      "question": "What is the recommended angle for bisecting technique in periapical imaging?",
+      "answer": "Perpendicular to the imaginary bisector",
+      "options": [
+        "Parallel to the long axis",
+        "90\u00b0 to the image receptor",
+        "Perpendicular to the imaginary bisector",
+        "Slightly above the horizontal plane"
+      ]
+    },
+    {
+      "question": "Which component in the x-ray tubehead produces electrons?",
+      "answer": "Cathode",
+      "options": [
+        "Anode",
+        "Collimator",
+        "Cathode",
+        "PID"
+      ]
+    },
+    {
+      "question": "What does the fixer solution do during film processing?",
+      "answer": "Removes unexposed silver halide crystals",
+      "options": [
+        "Hardens the film emulsion",
+        "Removes unexposed silver halide crystals",
+        "Reduces exposed crystals to black metallic silver",
+        "Neutralizes the developer"
+      ]
+    },
+    {
+      "question": "What is the maximum permissible dose (MPD) for occupational exposure annually?",
+      "answer": "5.0 rem (0.05 Sv)",
+      "options": [
+        "0.5 rem",
+        "5.0 rem (0.05 Sv)",
+        "50.0 rem",
+        "0.05 mSv"
+      ]
+    },
+    {
+      "question": "Which type of tissue is most radiosensitive?",
+      "answer": "Bone marrow",
       "options": [
         "Muscle",
-        "Skin",
-        "Bone",
-        "Reproductive tissue"
+        "Nerve",
+        "Bone marrow",
+        "Cartilage"
       ]
     },
     {
-      "question": "What is the recommended minimum distance a healthcare worker should stand from the x-ray tube head during exposure?",
-      "answer": "6 feet",
+      "question": "What should be done if a film packet is contaminated with saliva?",
+      "answer": "Wipe with a disinfectant before opening",
       "options": [
-        "3 feet",
-        "4 feet",
-        "5 feet",
-        "6 feet"
+        "Place in the developer immediately",
+        "Wipe with alcohol and reuse",
+        "Wipe with a disinfectant before opening",
+        "Open with gloved hands directly"
       ]
     },
     {
-      "question": "Which radiograph is best for evaluating third molars?",
-      "answer": "Panoramic",
-      "options": [
-        "Cephalometric",
-        "Periapical",
-        "Bitewing",
-        "Panoramic"
-      ]
-    },
-    {
-      "question": "What does the milliamperage (mA) setting on an x-ray machine control?",
-      "answer": "Quantity of x-rays",
-      "options": [
-        "X-ray penetration",
-        "Exposure time",
-        "Quantity of x-rays",
-        "Film speed"
-      ]
-    },
-    {
-      "question": "Which landmark appears radiolucent on a periapical radiograph of the maxillary central incisors?",
-      "answer": "Incisive foramen",
-      "options": [
-        "Mental foramen",
-        "Nasal spine",
-        "Incisive foramen",
-        "Median palatine suture"
-      ]
-    },
-    {
-      "question": "What error causes overlapping of the proximal surfaces on a bitewing radiograph?",
+      "question": "What causes overlapping contacts in bitewing radiographs?",
       "answer": "Incorrect horizontal angulation",
       "options": [
-        "Incorrect film placement",
         "Incorrect vertical angulation",
-        "Incorrect horizontal angulation",
-        "Too much exposure time"
+        "Film placement error",
+        "Improper exposure time",
+        "Incorrect horizontal angulation"
       ]
     },
     {
-      "question": "What is the effect of increasing the kilovoltage peak (kVp) setting?",
-      "answer": "Increased penetration and lower contrast",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Lower penetration and higher contrast",
-        "Increased penetration and lower contrast",
-        "Shorter exposure time",
-        "Increased image size"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which type of cells are most sensitive to radiation?",
-      "answer": "Rapidly dividing cells",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Nerve cells",
-        "Muscle cells",
-        "Rapidly dividing cells",
-        "Fat cells"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     },
     {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
+      "question": "What is the function of the lead apron?",
+      "answer": "Shields reproductive organs from scatter radiation",
       "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
+        "Improves image sharpness",
+        "Increases contrast",
+        "Shields reproductive organs from scatter radiation",
+        "Filters the primary beam"
       ]
     },
     {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
+      "question": "Which error creates a blurry image?",
+      "answer": "Movement during exposure",
       "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient exposure",
+        "Incorrect film speed",
+        "Movement during exposure",
+        "Expired film"
       ]
     },
     {
-      "question": "What does PID stand for in radiography?",
-      "answer": "Position Indicating Device",
+      "question": "Why is the paralleling technique preferred?",
+      "answer": "It produces the most accurate image with minimal distortion",
       "options": [
-        "Positive Imaging Device",
-        "Position Indicating Device",
-        "Photographic Imaging Disc",
-        "Primary Image Developer"
+        "It is faster",
+        "It uses less radiation",
+        "It produces the most accurate image with minimal distortion",
+        "It requires fewer instruments"
       ]
     },
     {
-      "question": "What is the most common radiographic processing error?",
-      "answer": "Improper time or temperature",
+      "question": "How should film be stored?",
+      "answer": "In a cool, dry place away from radiation",
       "options": [
-        "Using fast film",
-        "Improper time or temperature",
-        "Exposing film to light",
-        "Contaminated fixer"
+        "In a lead-lined cabinet",
+        "Under bright light",
+        "In a warm area",
+        "In a cool, dry place away from radiation"
       ]
     },
     {
-      "question": "What is a panoramic radiograph used for?",
-      "answer": "To evaluate the entire dentition and supporting structures",
+      "question": "Which condition causes radiographic fog?",
+      "answer": "Exposure to scatter or secondary radiation",
       "options": [
-        "To assess TMJ only",
-        "To evaluate nasal cavity",
-        "To evaluate the entire dentition and supporting structures",
-        "To detect caries"
-      ]
-    },
-    {
-      "question": "Which error causes a cone-cut on a radiograph?",
-      "answer": "Improper PID alignment",
-      "options": [
-        "Incorrect exposure time",
-        "Improper PID alignment",
-        "Too much kVp",
-        "Wrong film speed"
-      ]
-    },
-    {
-      "question": "Which component inside a film packet protects against secondary radiation?",
-      "answer": "Lead foil",
-      "options": [
-        "Plastic wrap",
-        "Black paper",
-        "Lead foil",
-        "Foam pad"
+        "Insufficient washing",
+        "Exposure to scatter or secondary radiation",
+        "Incorrect mA setting",
+        "Developer contamination"
       ]
     }
   ];

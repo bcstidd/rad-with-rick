@@ -177,4 +177,55 @@
   .back-link:hover {
     text-decoration: underline;
   }
+  .nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
   
+  .prev-btn,
+  .next-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .prev-btn:hover,
+  .next-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  .button-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .ytho {
+    width: 42px;
+    height: 42px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, filter 0.2s ease;
+    display: inline-block;
+    vertical-align: middle;
+    filter: grayscale(20%);
+  }
+  
+  .explanation-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .explanation {
+    background-color: #f3f3f3;
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+  }

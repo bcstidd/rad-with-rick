@@ -18,14 +18,15 @@ export default function Flashcards() {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [selectedOption, setSelectedOption] = useState(null)
   const [showAnswer, setShowAnswer] = useState(false)
+  const [showExplanation, setShowExplanation] = useState(false)
   const [score, setScore] = useState(0)
-
   const currentCard = questionSet[currentIndex]
 
   const handleOptionClick = (option) => {
     if (showAnswer) return
     setSelectedOption(option)
     setShowAnswer(true)
+    setShowExplanation(false)
     if (option === currentCard.answer) {
       setScore(score + 1)
     }
@@ -34,7 +35,15 @@ export default function Flashcards() {
   const handleNext = () => {
     setSelectedOption(null)
     setShowAnswer(false)
-    setCurrentIndex((prev) => (prev + 1) % questionSet.length)
+    setShowExplanation(false)
+    setCurrentIndex((prev) => Math.min(prev + 1, questionSet.length - 1))
+  }
+
+  const handlePrevious = () => {
+    setSelectedOption(null)
+    setShowAnswer(false)
+    setShowExplanation(false)
+    setCurrentIndex((prev) => Math.max(prev - 1, 0))
   }
 
   const handleShuffle = () => {
@@ -44,6 +53,7 @@ export default function Flashcards() {
     setCurrentIndex(0)
     setSelectedOption(null)
     setShowAnswer(false)
+    setShowExplanation(false)
     setScore(0)
   }
 
@@ -53,6 +63,7 @@ export default function Flashcards() {
     setCurrentIndex(0)
     setSelectedOption(null)
     setShowAnswer(false)
+    setShowExplanation(false)
     setScore(0)
   }
 
@@ -84,12 +95,32 @@ export default function Flashcards() {
             </li>
           ))}
         </ul>
+
+        {showAnswer && (
+          <img
+            src="/icons/ytho.jpg"
+            alt="Why is this correct/incorrect?"
+            className="ytho"
+            onClick={() => setShowExplanation(!showExplanation)}
+          />
+        )}
+
+        {showAnswer && showExplanation && (
+          <p className="explanation">{currentCard.explanation}</p>
+        )}
+      </div>
+
+      <div className="nav-buttons">
+        <button onClick={handlePrevious} className="prev-btn" disabled={currentIndex === 0}>
+          Previous
+        </button>
+
+        <button onClick={handleNext} className="next-btn" disabled={currentIndex === questionSet.length - 1}>
+          Next
+        </button>
       </div>
 
       <div className="button-row">
-        <button onClick={handleNext} className="next-btn">
-          {currentIndex === questionSet.length - 1 ? "Restart" : "Next"}
-        </button>
         {!isShuffled ? (
           <button onClick={handleShuffle} className="next-btn">Shuffle</button>
         ) : (
