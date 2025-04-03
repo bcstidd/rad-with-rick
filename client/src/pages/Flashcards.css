@@ -131,4 +131,50 @@
     color: #666;
     margin-bottom: 0.5rem;
   }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
+  /* For Next + Shuffle/Reset button alignment */
+.button-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .next-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .next-btn:hover {
+    background-color: #005fa3;
+  }
+  
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+    color: #007acc;
+    text-decoration: none;
+  }
+  
+  .back-link:hover {
+    text-decoration: underline;
+  }
   
