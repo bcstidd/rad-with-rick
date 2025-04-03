@@ -1,9 +1,10 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Flashcards from './pages/Flashcards'
+import FlashcardModeSelect from './pages/FlashcardModeSelect'
+import FlashcardFlip from './pages/FlashcardFlip'
+import Flashcards from './pages/Flashcards' // Quiz mode
 import './App.css'
-
 
 export default function App() {
   return (
@@ -17,15 +18,18 @@ export default function App() {
             <Link to="/flashcards">Flashcards</Link>
           </nav>
         </header>
-
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/flashcards" element={<Flashcards />} />
+    
+  
+        {/* Flashcard routes */}
+  <Route path="/" element={<Home />} />
+  <Route path="/about" element={<About />} />
+  <Route path="/flashcards/quiz" element={<Flashcards />} />
+  <Route path="/flashcards/study" element={<FlashcardFlip />} />
+  <Route path="/flashcards" element={<FlashcardModeSelect />} />
+</Routes>
 
-        </Routes>
       </div>
     </Router>
   )
 }
-
