@@ -1,6 +1,5 @@
-import './Flashcards.css';
-import { useState } from 'react'
 import './Flashcards.css'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import flashcards from '../data/flashcards'
 
@@ -21,6 +20,8 @@ export default function Flashcards() {
   const [showAnswer, setShowAnswer] = useState(false)
   const [showExplanation, setShowExplanation] = useState(false)
   const [score, setScore] = useState(0)
+  const [hidden, setHidden] = useState(false)
+
   const currentCard = questionSet[currentIndex]
 
   const handleOptionClick = (option) => {
@@ -34,10 +35,14 @@ export default function Flashcards() {
   }
 
   const handleNext = () => {
-    setSelectedOption(null)
-    setShowAnswer(false)
-    setShowExplanation(false)
-    setCurrentIndex((prev) => Math.min(prev + 1, questionSet.length - 1))
+    setHidden(true)
+    setTimeout(() => {
+      setSelectedOption(null)
+      setShowAnswer(false)
+      setShowExplanation(false)
+      setCurrentIndex((prev) => Math.min(prev + 1, questionSet.length - 1))
+      setHidden(false)
+    }, 300)
   }
 
   const handlePrevious = () => {
@@ -75,7 +80,7 @@ export default function Flashcards() {
       <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
       <p className="score">Score: {score}</p>
 
-      <div className="quiz-card">
+      <div className={`quiz-card ${hidden ? 'hidden' : ''}`}>
         <p className="question">{currentCard.question}</p>
         <ul className="options">
           {currentCard.options.map((option, index) => (
@@ -103,6 +108,7 @@ export default function Flashcards() {
             alt="Why is this correct/incorrect?"
             className="ytho"
             onClick={() => setShowExplanation(!showExplanation)}
+            draggable="false"
           />
         )}
 
@@ -115,7 +121,6 @@ export default function Flashcards() {
         <button onClick={handlePrevious} className="prev-btn" disabled={currentIndex === 0}>
           Previous
         </button>
-
         <button onClick={handleNext} className="next-btn" disabled={currentIndex === questionSet.length - 1}>
           Next
         </button>

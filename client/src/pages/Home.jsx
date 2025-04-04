@@ -15,18 +15,13 @@ export default function Home() {
 
   return (
     <div className="container">
-      <img src="./icons/logo.jpg" alt="App Logo" className="logo-intro" />
-  
       <h2 className="hero-title">
         Welcome to RAD With Rick 🧠
       </h2>
-  
       <p className="hero-subtitle">
         This app is built to help you review dental radiology and pass the DANB exam.
       </p>
-  
       <hr />
-  
       <p><strong>Server says:</strong> {message}</p>
     </div>
   )

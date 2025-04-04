@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
-},
+  },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.4.1",
+    "react-swipeable": "^7.0.2",
+    "swipeable": "^1.0.5"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
