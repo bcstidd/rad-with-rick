@@ -14,7 +14,6 @@ export default function Header() {
         <Link to="/">Home</Link>
         <Link to="/about">About</Link>
         <Link to="/flashcards">Flashcards</Link>
-        <Link to="/settings">Settings</Link>
       </nav>
     </header>
   )

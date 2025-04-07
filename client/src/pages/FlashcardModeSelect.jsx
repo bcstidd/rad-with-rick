@@ -6,17 +6,15 @@ export default function FlashcardModeSelect() {
 
   return (
     <div className="quiz-container">
-      <h2>Select Study Mode</h2>
-      <button onClick={() => navigate('/flashcards/quiz')} className="next-btn">
-        Quiz Mode 🧠
-      </button>
-      <button
-        onClick={() => navigate('/flashcards/study')}
-        className="next-btn"
-        style={{ marginLeft: '1rem' }}
-      >
-        Flashcard Mode 📇
-      </button>
-    </div>
+  <h2>Select Study Mode</h2>
+  <div className="quiz-type-buttons">
+    <button onClick={() => navigate('/flashcards/quiz')}>
+      Quiz Mode 🧠
+    </button>
+    <button onClick={() => navigate('/flashcards/study')}>
+      Flashcard Mode 📇
+    </button>
+  </div>
+</div>
   )
 }

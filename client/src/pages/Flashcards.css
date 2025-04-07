@@ -1,245 +1,165 @@
-/* Layout Containers */
+
+.quiz-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.quiz-header {
+  background-color: #eee;
+  color: #000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0 0 1rem 0;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+body.dark .quiz-header {
+  background-color: #1c1c1c;
+  color: #f0f0f0;
+  box-shadow: 0 2px 8px rgba(255, 255, 255, 0.05);
+}
+
+.quiz-main {
+  display: flex;
+  justify-content: center;
+}
+
+.quiz-footer {
+  text-align: center;
+}
+
 .quiz-container {
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.quiz-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-emerald);
+}
+
+body.dark .quiz-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  border-color: #66ccff;
+}
+
+.question {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.options li {
+  background-color: #f2f2f2;
+  margin: 0.5rem 0;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.options li:hover {
+  background-color: #e0e0e0;
+}
+
+.options li.correct {
+  background-color: #2e7d32;
+  color: #fff;
+}
+
+.options li.incorrect {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+body.dark .options li {
+  background-color: #2a2a2a;
+  color: #eaeaea;
+  border: 1px solid #444;
+}
+
+body.dark .options li.correct {
+  background-color: #388e3c;
+}
+
+body.dark .options li.incorrect {
+  background-color: #c62828;
+}
+
+.nav-area {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.next-btn,
+.prev-btn,
+.shuffle-btn {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  background-color: var(--accent-maroon);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.next-btn:hover,
+.prev-btn:hover,
+.shuffle-btn:hover {
+  background-color: #a12d3b;
+}
+
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .quiz-card {
+    padding: 1rem;
+  }
+
+  .title-area h2 {
+    font-size: 1.25rem;
+  }
+
+  .nav-area {
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    box-sizing: border-box;
   }
-  
-  /* Title Area */
-  .title-area {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .title-area .back-link {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-    color: #007acc;
-    text-decoration: none;
-  }
-  
-  .title-area h2 {
-    margin: 0.25rem 0;
-    font-size: 1.5rem;
-  }
-  
-  .title-area .progress,
-  .title-area .score {
-    margin: 0.25rem 0;
-    font-size: 1rem;
-  }
-  
-  /* Card Area */
-  .card-area {
-    width: 100%;
-  }
-  
-  /* Quiz Card */
-  .quiz-card {
-    background-color: #fff;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-  }
-  
-  body.dark .quiz-card {
-    background-color: #1e1e1e;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-  }
-  
-  .quiz-card.hidden {
-    opacity: 0;
-    transform: scale(0.98);
-  }
-  
-  /* Question */
-  .question {
-    font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 1.2rem;
-  }
-  
-  /* Options */
-  .options {
-    list-style: none;
-    padding: 0;
-    margin: 1rem 0;
-  }
-  
-  .options li {
-    background-color: #f2f2f2;
-    margin: 0.5rem 0;
-    padding: 0.75rem 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  
-  .options li:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .options li.correct {
-    background-color: #2e7d32;
-    color: #fff;
-    border: none;
-  }
-  
-  .options li.incorrect {
-    background-color: #d32f2f;
-    color: #fff;
-    border: none;
-  }
-  
-  body.dark .options li {
-    background-color: #2a2a2a;
-    color: #eaeaea;
-    border: 1px solid #444;
-  }
-  
-  body.dark .options li:hover {
-    background-color: #333;
-  }
-  
-  body.dark .options li.correct {
-    background-color: #388e3c;
-  }
-  
-  body.dark .options li.incorrect {
-    background-color: #c62828;
-  }
-  
-  /* YTHO Button */
-  .ytho {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    margin-top: 1rem;
-    transition: transform 0.2s ease;
-    object-fit: cover;
-    background: transparent;
-  }
-  
-  .ytho:hover {
-    transform: scale(1.05);
-  }
-  
-  /* Explanation Box */
-  .explanation {
-    background-color: #f4f8fb;
-    border-left: 4px solid #007acc;
-    color: #333;
-    font-size: 0.95rem;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    border-radius: 6px;
-    text-align: left;
-  }
-  
-  body.dark .explanation {
-    background-color: #2c2c2c;
-    border-left-color: #66ccff;
-    color: #ccc;
-  }
-  
-  /* Navigation Area */
-  .nav{
-    border: 3px solid green;
-    display: flex;
-    justify-content: space-around;
-  }
-  .nav-area {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-  
+
   .next-btn,
   .prev-btn,
   .shuffle-btn {
-    padding: 0.6rem 1.2rem;
-    font-size: 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    width: 100%;
+    max-width: 300px;
   }
-  
-  .next-btn:hover,
-  .prev-btn:hover,
-  .shuffle-btn:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Shuffle / Reset Button Row */
-  .shuffle-area {
-    margin-top: 1rem;
-    text-align: center;
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 600px) {
-    .quiz-container {
-      padding: 1rem 0.5rem;
-    }
-  
-    .quiz-card {
-      padding: 1rem;
-    }
-  
-    .title-area h2 {
-      font-size: 1.25rem;
-    }
-  
-    .nav-area {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .next-btn,
-    .prev-btn,
-    .shuffle-btn {
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-  .quiz-page {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding: 2rem 1rem;
-    max-width: 700px;
-    margin: 0 auto;
-  }
-  
-  .quiz-header,
-  .quiz-footer {
-    text-align: center;
-  }
-
-  .quiz-header {
-    background-color: #eee;
-    display:flex;
-    justify-content:space-around;
-    align-items:center;
-    padding:1px 2px;
-    margin: 10 0 10 10px;
-  }
-  
-  .quiz-main {
-    display: flex;
-    justify-content: center;
-    border: 2px solid red; /* debug only */
-  }
+}

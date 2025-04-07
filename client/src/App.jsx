@@ -16,12 +16,9 @@ export default function App() {
   })
 
   useEffect(() => {
-    if (isDarkMode) {
-      document.body.classList.add('dark')
-    } else {
-      document.body.classList.remove('dark')
-    }
-    localStorage.setItem('dark', JSON.stringify(isDarkMode))
+    document.body.classList.toggle('dark', isDarkMode)
+    document.body.classList.toggle('gemtone', !isDarkMode) // Gem tone when NOT dark
+    localStorage.setItem('dark', isDarkMode)
   }, [isDarkMode])
 
   const toggleDarkMode = () => setIsDarkMode(prev => !prev)
