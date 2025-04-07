@@ -1,7 +1,9 @@
-import './Flashcards.css'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import flashcards from '../data/flashcards'
+import QuizCard from '../components/QuizCard'
+import NavButtons from '../components/NavButtons'
+import '../pages/Flashcards.css'
 
 function shuffleArray(array) {
   const copy = [...array]
@@ -29,9 +31,7 @@ export default function Flashcards() {
     setSelectedOption(option)
     setShowAnswer(true)
     setShowExplanation(false)
-    if (option === currentCard.answer) {
-      setScore(score + 1)
-    }
+    if (option === currentCard.answer) setScore(score + 1)
   }
 
   const handleNext = () => {
@@ -42,7 +42,7 @@ export default function Flashcards() {
       setShowExplanation(false)
       setCurrentIndex((prev) => Math.min(prev + 1, questionSet.length - 1))
       setHidden(false)
-    }, 300)
+    }, 250)
   }
 
   const handlePrevious = () => {
@@ -74,65 +74,38 @@ export default function Flashcards() {
   }
 
   return (
-    <div className="quiz-container">
-      <Link to="/flashcards" className="back-link">← Back to Mode Select</Link>
-      <h2>Quiz Mode {isShuffled && "(Shuffled)"}</h2>
-      <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
-      <p className="score">Score: {score}</p>
 
-      <div className={`quiz-card ${hidden ? 'hidden' : ''}`}>
-        <p className="question">{currentCard.question}</p>
-        <ul className="options">
-          {currentCard.options.map((option, index) => (
-            <li
-              key={index}
-              onClick={() => handleOptionClick(option)}
-              className={
-                selectedOption
-                  ? option === currentCard.answer
-                    ? 'correct'
-                    : option === selectedOption
-                    ? 'incorrect'
-                    : ''
-                  : ''
-              }
-            >
-              {option}
-            </li>
-          ))}
-        </ul>
-
-        {showAnswer && (
-          <img
-            src="/icons/ytho.jpg"
-            alt="Why is this correct/incorrect?"
-            className="ytho"
-            onClick={() => setShowExplanation(!showExplanation)}
-            draggable="false"
+      <div className="quiz-page">
+        <div className="quiz-header">
+          <Link to="/flashcards" className="back-link">← Back to Mode Select</Link>
+          <h2>Quiz Mode {isShuffled && '(Shuffled)'}</h2>
+          <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
+          <p className="score">Score: {score}</p>
+        </div>
+    
+        <div className="quiz-main">
+          <QuizCard
+            card={currentCard}
+            hidden={hidden}
+            selectedOption={selectedOption}
+            showAnswer={showAnswer}
+            showExplanation={showExplanation}
+            onOptionClick={handleOptionClick}
+            onToggleExplanation={() => setShowExplanation(!showExplanation)}
           />
-        )}
-
-        {showAnswer && showExplanation && (
-          <p className="explanation">{currentCard.explanation}</p>
-        )}
+        </div>
+    
+        <div className="quiz-footer">
+          <NavButtons
+            onPrevious={handlePrevious}
+            onNext={handleNext}
+            onShuffle={handleShuffle}
+            onReset={handleReset}
+            isShuffled={isShuffled}
+            currentIndex={currentIndex}
+            total={questionSet.length}
+          />
+        </div>
       </div>
-
-      <div className="nav-buttons">
-        <button onClick={handlePrevious} className="prev-btn" disabled={currentIndex === 0}>
-          Previous
-        </button>
-        <button onClick={handleNext} className="next-btn" disabled={currentIndex === questionSet.length - 1}>
-          Next
-        </button>
-      </div>
-
-      <div className="button-row">
-        {!isShuffled ? (
-          <button onClick={handleShuffle} className="next-btn">Shuffle</button>
-        ) : (
-          <button onClick={handleReset} className="next-btn">Reset Order</button>
-        )}
-      </div>
-    </div>
-  )
+    )
 }

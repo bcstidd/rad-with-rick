@@ -1,43 +1,50 @@
-.flashcards-container {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr;
-    max-width: 500px;
-    margin-top: 1rem;
-    border: 2px dashed red;
-  }
-  
-  .flashcard {
-    cursor: pointer;
+/* Layout Containers */
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background: #f2f2f2;
-    color: #000;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    box-sizing: border-box;
   }
   
-  .flashcard.flipped {
-    background: #007acc;
-    color: white;
-  }
-  .quiz-container {
+  /* Title Area */
+  .title-area {
     text-align: center;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
   
-  .quiz-container {
-    text-align: center;
+  .title-area .back-link {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+    color: #007acc;
+    text-decoration: none;
   }
   
+  .title-area h2 {
+    margin: 0.25rem 0;
+    font-size: 1.5rem;
+  }
+  
+  .title-area .progress,
+  .title-area .score {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+  }
+  
+  /* Card Area */
+  .card-area {
+    width: 100%;
+  }
+  
+  /* Quiz Card */
   .quiz-card {
     background-color: #fff;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin: 2rem auto;
-    max-width: 600px;
     transition: all 0.3s ease;
   }
   
@@ -46,12 +53,19 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   }
   
+  .quiz-card.hidden {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  
+  /* Question */
   .question {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
   }
   
+  /* Options */
   .options {
     list-style: none;
     padding: 0;
@@ -102,29 +116,33 @@
     background-color: #c62828;
   }
   
+  /* YTHO Button */
   .ytho {
-    margin-top: 1rem;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
-    width: 42px;
-    height: 42px;
+    border: none;
     border-radius: 50%;
+    margin-top: 1rem;
     transition: transform 0.2s ease;
     object-fit: cover;
+    background: transparent;
   }
   
   .ytho:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
   
+  /* Explanation Box */
   .explanation {
-    margin-top: 1.2rem;
-    padding: 1rem;
     background-color: #f4f8fb;
     border-left: 4px solid #007acc;
-    text-align: left;
-    border-radius: 8px;
-    font-size: 0.95rem;
     color: #333;
+    font-size: 0.95rem;
+    padding: 0.75rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    text-align: left;
   }
   
   body.dark .explanation {
@@ -132,49 +150,96 @@
     border-left-color: #66ccff;
     color: #ccc;
   }
-  .ytho {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    border: none;
-    outline: none;
-    background: transparent;
-    border-radius: 50%;
-    transition: transform 0.2s ease;
+  
+  /* Navigation Area */
+  .nav{
+    border: 3px solid green;
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-area {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   
-  .ytho:hover {
-    transform: scale(1.05);
-  }
-  
-  .ytho:focus,
-  .ytho:active,
-  .ytho:focus-visible {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-  }
-  .explanation {
-    background-color: transparent;
-    color: inherit;
+  .next-btn,
+  .prev-btn,
+  .shuffle-btn {
+    padding: 0.6rem 1.2rem;
     font-size: 1rem;
-    padding: 0.75rem;
-    margin-top: 1rem;
-    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
     border: none;
-    outline: none;
-    box-shadow: none;
-    line-height: 1.5;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .next-btn:hover,
+  .prev-btn:hover,
+  .shuffle-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Shuffle / Reset Button Row */
+  .shuffle-area {
+    margin-top: 1rem;
     text-align: center;
   }
   
-  .explanation:focus,
-  .explanation:active {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .quiz-container {
+      padding: 1rem 0.5rem;
+    }
+  
+    .quiz-card {
+      padding: 1rem;
+    }
+  
+    .title-area h2 {
+      font-size: 1.25rem;
+    }
+  
+    .nav-area {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .next-btn,
+    .prev-btn,
+    .shuffle-btn {
+      width: 100%;
+      max-width: 300px;
+    }
   }
-  .quiz-card *:focus {
-    outline: none;
-    box-shadow: none;
+  .quiz-page {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem 1rem;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .quiz-header,
+  .quiz-footer {
+    text-align: center;
+  }
+
+  .quiz-header {
+    background-color: #eee;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    padding:1px 2px;
+    margin: 10 0 10 10px;
+  }
+  
+  .quiz-main {
+    display: flex;
+    justify-content: center;
+    border: 2px solid red; /* debug only */
   }
