@@ -6,7 +6,7 @@ export default function FlashcardModeSelect() {
 
   return (
     <div className="quiz-container">
-  <h2>Select Study Mode</h2>
+  <h2 className='mode-text'>Select Study Mode</h2>
   <div className="quiz-type-buttons">
     <button onClick={() => navigate('/flashcards/quiz')}>
       Quiz Mode 🧠

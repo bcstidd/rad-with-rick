@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import flashcards from '../data/flashcards'
 import QuizCard from '../components/QuizCard'
-import NavButtons from '../components/NavButtons'
+// import NavButtons from '../components/NavButtons' // ← Commented out to use new button layout
 import '../pages/Flashcards.css'
 
 function shuffleArray(array) {
@@ -74,38 +74,47 @@ export default function Flashcards() {
   }
 
   return (
-
-      <div className="quiz-page">
-        <div className="quiz-header">
-          <Link to="/flashcards" className="back-link">← Back to Mode Select</Link>
-          <h2>Quiz Mode {isShuffled && '(Shuffled)'}</h2>
-          <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
-          <p className="score">Score: {score}</p>
-        </div>
-    
-        <div className="quiz-main">
-          <QuizCard
-            card={currentCard}
-            hidden={hidden}
-            selectedOption={selectedOption}
-            showAnswer={showAnswer}
-            showExplanation={showExplanation}
-            onOptionClick={handleOptionClick}
-            onToggleExplanation={() => setShowExplanation(!showExplanation)}
-          />
-        </div>
-    
-        <div className="quiz-footer">
-          <NavButtons
-            onPrevious={handlePrevious}
-            onNext={handleNext}
-            onShuffle={handleShuffle}
-            onReset={handleReset}
-            isShuffled={isShuffled}
-            currentIndex={currentIndex}
-            total={questionSet.length}
-          />
-        </div>
+    <div className="quiz-page">
+      <div className="quiz-header">
+        <Link to="/flashcards" className="back-link">← Back to Mode</Link>
+        <h2 className='mode-text'>Quiz Mode {isShuffled && '(Shuffled)'}</h2>
+        <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
+        <p className="score">Score: {score}</p>
       </div>
-    )
+
+      <div className="quiz-main">
+        <QuizCard
+          card={currentCard}
+          hidden={hidden}
+          selectedOption={selectedOption}
+          showAnswer={showAnswer}
+          showExplanation={showExplanation}
+          onOptionClick={handleOptionClick}
+          onToggleExplanation={() => setShowExplanation(!showExplanation)}
+        />
+      </div>
+
+      <div className="quiz-footer">
+        {/* Old component kept for fallback */}
+        {/* 
+        <NavButtons
+          onPrevious={handlePrevious}
+          onNext={handleNext}
+          onShuffle={handleShuffle}
+          onReset={handleReset}
+          isShuffled={isShuffled}
+          currentIndex={currentIndex}
+          total={questionSet.length}
+        /> 
+        */}
+
+        {/* New clean layout */}
+        <div className="button-group">
+        <button className='shuffle-button' onClick={handleShuffle}>Shuffle</button>
+      </div>
+          <button onClick={handlePrevious}>Previous</button>
+          <button onClick={handleNext}>Next</button>
+        </div>
+    </div>
+  )
 }

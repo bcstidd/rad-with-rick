@@ -33,6 +33,7 @@ export default function QuizCard({
       </ul>
 
       {showAnswer && (
+        <div className='ytho-container'>
         <img
           src={ytho}
           alt="Why is this correct/incorrect?"
@@ -40,6 +41,8 @@ export default function QuizCard({
           onClick={onToggleExplanation}
           draggable="false"
         />
+        <p className='ytho-text'>yTho?</p>
+        </div>
       )}
 
       {showAnswer && showExplanation && (

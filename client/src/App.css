@@ -1,3 +1,11 @@
+/* 
+Sample palette
+#7c6a0a
+#babd8d
+ffdac6
+ea8c55
+81171b */
+
 /* ===========================
    Root, Reset, Body Theme
    =========================== */
@@ -6,7 +14,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+  .op
   body {
     margin: 0;
     font-family: system-ui, sans-serif;
@@ -187,7 +195,7 @@
     }
     
     .quiz-type-buttons button {
-      background-color: #7b3f61; /* gem tone purple */
+      background-color: #ffb162; 
       color: white;
       padding: 0.8rem 1.6rem;
       font-size: 1.1rem;
@@ -200,7 +208,7 @@
     }
     
     .quiz-type-buttons button:hover {
-      background-color: #9d4b77;
+      background-color: #DE9250;
       transform: translateY(-2px);
     }
     
@@ -213,18 +221,20 @@
   .shuffle-btn {
     padding: 0.6rem 1.2rem;
     font-size: 1rem;
-    background-color: #c2185b;
+    background-color: #DE9250;
     color: white;
     border: none;
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.2s ease;
   }
-  
+  .next-btn {
+    margin-top: 1rem;
+  }
   .next-btn:hover,
   .prev-btn:hover,
   .shuffle-btn:hover {
-    background-color: #a0154b;
+    background-color: #ffb162;
   }
   .toggle-theme {
     outline: none;
@@ -255,11 +265,15 @@
   }
   
   .question {
+    color: #ccc;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1.2rem;
   }
-  
+  .ytho {
+    width: 80px;
+    border-radius: 3px;
+  }
   .options li {
     background-color: #f2f2f2;
     margin: 0.5rem 0;
@@ -278,7 +292,7 @@
     background-color: #2e7d32;
     color: #fff;
   }
-  
+  .quiz-header: ;
   .options li.incorrect {
     background-color: #d32f2f;
     color: #fff;
@@ -302,15 +316,26 @@
   }
   
   body.dark .options li.incorrect {
-    background-color: #c62828;
+    background-color: #A35752;
   }
-  
+  .back-link {
+    color: #ffb162;
+  }
+  .progress {
+    color:#5D8B8B
+  }
+  body.dark .progress {
+    color: #5D8B8B;
+  }
+  .score {
+    color:#004d4d
+  }
   /* ===========================
      Explanation Box
      =========================== */
   .explanation {
     background-color: #f4f8fb;
-    border-left: 4px solid #007acc;
+    border-left: 4px solid #008080;
     color: #333;
     font-size: 0.95rem;
     padding: 0.75rem;
@@ -321,10 +346,17 @@
   
   body.dark .explanation {
     background-color: #2c2c2c;
-    border-left-color: #66ccff;
+    border-left-color: #008080;
     color: #ccc;
   }
-  
+button {
+  color:#ccc;
+  background-color: #008080;
+}
+.shuffle-button {
+  color: #004d4d;
+  background-color: #ffb162;
+}
   /* ===========================
      Media Queries
      =========================== */
@@ -364,4 +396,6 @@
     border-radius: 1rem;
     box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
   }
-  
+  .about-text {
+    color: #003838
+  }
