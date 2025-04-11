@@ -72,12 +72,15 @@ body.dark .quiz-header {
 }
 .ytho-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 4px;
   /* border: 3px dashed red; */
 }
 .ytho-text {
-  color: #003838;
+  color: #c8843f;
+  font-weight: 700;
+  justify-self: flex-start;
+  align-self: center;
   /* margin-left: -320px; */
 }
 body.dark .ytho-text {
