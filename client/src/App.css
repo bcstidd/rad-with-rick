@@ -48,7 +48,7 @@ color: #004d4d;
 body.dark h1,
 body.dark h2,
 body.dark p.hero-subtitle {
-color: #66ccff;
+color: #222;
 }
 
 strong,
@@ -277,7 +277,6 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
 body.dark .quiz-card {
 background-color: #2a2a2a;
-border-color: #66ccff;
 }
 
 .question,
@@ -401,21 +400,25 @@ border-radius: 8px;
 }
 
 .progress {
-color: #5D8B8B;
+color: #003838;
+margin-top: 0px;
 }
 
 body.dark .progress {
-color: #5D8B8B;
+color: #003838;
+margin-top: 0px;
 }
 
 body.dark .back-link {
 color: #00B8A9;
 }
 .back-link {
-  color:#003838
+  color:#003838;
+  justify-self: center;
 }
-.progress {
-  color: #81171B;
+body.dark h2  {
+  color: #DE9250;
+  font-size:xx-large;
 }
 .about-text {
   color:#fff;

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import flashcards from '../data/flashcards'
 import QuizCard from '../components/QuizCard'
-// import NavButtons from '../components/NavButtons' // ← Commented out to use new button layout
 import '../pages/Flashcards.css'
 
 function shuffleArray(array) {
@@ -75,13 +74,23 @@ export default function Flashcards() {
 
   return (
     <div className="quiz-page">
+      {/* Back Link */}
+      <div className="back-link-wrapper">
+        <Link to="/flashcards" className="back-link">
+          ← Back to Mode Select
+        </Link>
+      </div>
+
+      {/* Quiz Header */}
       <div className="quiz-header">
-        <Link to="/flashcards" className="back-link">← Back to Mode</Link>
-        <h2 className='mode-text'>Quiz Mode {isShuffled && '(Shuffled)'}</h2>
-        <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
+        <div className="mode-progress">
+          <h2 className="mode-title">Quiz Mode</h2>
+          <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
+        </div>
         <p className="score">Score: {score}</p>
       </div>
 
+      {/* Quiz Card */}
       <div className="quiz-main">
         <QuizCard
           card={currentCard}
@@ -94,27 +103,30 @@ export default function Flashcards() {
         />
       </div>
 
+      {/* Quiz Navigation */}
       <div className="quiz-footer">
-        {/* Old component kept for fallback */}
-        {/* 
-        <NavButtons
-          onPrevious={handlePrevious}
-          onNext={handleNext}
-          onShuffle={handleShuffle}
-          onReset={handleReset}
-          isShuffled={isShuffled}
-          currentIndex={currentIndex}
-          total={questionSet.length}
-        /> 
-        */}
+        <button onClick={handleShuffle} className="shuffle-btn">
+          Shuffle
+        </button>
 
-        {/* New clean layout */}
-        <div className="button-group">
-        <button className='shuffle-button' onClick={handleShuffle}>Shuffle</button>
-      </div>
-          <button onClick={handlePrevious}>Previous</button>
-          <button onClick={handleNext}>Next</button>
+        <div className="nav-group">
+          <button
+            onClick={handlePrevious}
+            className="prev-btn"
+            disabled={currentIndex === 0}
+          >
+            Previous
+          </button>
+
+          <button
+            onClick={handleNext}
+            className="next-btn"
+            disabled={currentIndex === questionSet.length - 1}
+          >
+            Next
+          </button>
         </div>
+      </div>
     </div>
   )
 }
