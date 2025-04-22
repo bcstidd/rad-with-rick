@@ -4,11 +4,6 @@
 =========================== */
 
 
-height: 100vh;
-display: flex;
-flex-direction: column;
-}
-
 body {
 margin: 0;
 font-family: system-ui, sans-serif;
@@ -291,6 +286,10 @@ body.dark .question {
 color: #00B8A9;
 }
 
+.options {
+  list-style: none;
+}
+
 .options li {
 background-color: #f2f2f2;
 margin: 0.5rem 0;
@@ -435,6 +434,7 @@ body.dark,
 }
 .ytho {
   display: flex;
+  justify-content: center;
 }
 p.ytho-text {
   margin-right: 380px;
@@ -443,7 +443,18 @@ img.ytho {
   height: 60px;
   border-radius: 6px;
 }
-
+body.dark p.hero-subtitle {
+  color: #00B8A9;
+}
+  .flashcard.flipped {
+    background: #003838; /* Emerald or jewel tone */
+    color: #fff;
+  }
+  
+  body.dark .flashcard.flipped {
+    background-color: #004d4d !important;
+    color: #f0f0f0 !important;
+  }
 /* ===========================
  Media Queries
 =========================== */

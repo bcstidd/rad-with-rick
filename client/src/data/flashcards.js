@@ -1,504 +1,113 @@
 const flashcards = [
-    {
-      "question": "What is the function of the collimator in an x-ray tubehead?",
-      "answer": "Restricts the size of the x-ray beam",
-      "options": [
-        "Increases contrast",
-        "Removes scatter radiation",
-        "Restricts the size of the x-ray beam",
-        "Measures radiation exposure"
-      ]
-    },
-    {
-      "question": "Which radiograph provides a broad view of the jaws, teeth, and sinuses?",
-      "answer": "Panoramic radiograph",
-      "options": [
-        "Cephalometric radiograph",
-        "Periapical radiograph",
-        "Panoramic radiograph",
-        "Bitewing radiograph"
-      ]
-    },
-    {
-      "question": "What error results in a 'cone cut' on the image?",
-      "answer": "Improper alignment of the PID",
-      "options": [
-        "Underexposure",
-        "Film bending",
-        "Improper alignment of the PID",
-        "Improper processing"
-      ]
-    },
-    {
-      "question": "What is the recommended angle for bisecting technique in periapical imaging?",
-      "answer": "Perpendicular to the imaginary bisector",
-      "options": [
-        "Parallel to the long axis",
-        "90\u00b0 to the image receptor",
-        "Perpendicular to the imaginary bisector",
-        "Slightly above the horizontal plane"
-      ]
-    },
-    {
-      "question": "Which component in the x-ray tubehead produces electrons?",
-      "answer": "Cathode",
-      "options": [
-        "Anode",
-        "Collimator",
-        "Cathode",
-        "PID"
-      ]
-    },
-    {
-      "question": "What does the fixer solution do during film processing?",
-      "answer": "Removes unexposed silver halide crystals",
-      "options": [
-        "Hardens the film emulsion",
-        "Removes unexposed silver halide crystals",
-        "Reduces exposed crystals to black metallic silver",
-        "Neutralizes the developer"
-      ]
-    },
-    {
-      "question": "What is the maximum permissible dose (MPD) for occupational exposure annually?",
-      "answer": "5.0 rem (0.05 Sv)",
-      "options": [
-        "0.5 rem",
-        "5.0 rem (0.05 Sv)",
-        "50.0 rem",
-        "0.05 mSv"
-      ]
-    },
-    {
-      "question": "Which type of tissue is most radiosensitive?",
-      "answer": "Bone marrow",
-      "options": [
-        "Muscle",
-        "Nerve",
-        "Bone marrow",
-        "Cartilage"
-      ]
-    },
-    {
-      "question": "What should be done if a film packet is contaminated with saliva?",
-      "answer": "Wipe with a disinfectant before opening",
-      "options": [
-        "Place in the developer immediately",
-        "Wipe with alcohol and reuse",
-        "Wipe with a disinfectant before opening",
-        "Open with gloved hands directly"
-      ]
-    },
-    {
-      "question": "What causes overlapping contacts in bitewing radiographs?",
-      "answer": "Incorrect horizontal angulation",
-      "options": [
-        "Incorrect vertical angulation",
-        "Film placement error",
-        "Improper exposure time",
-        "Incorrect horizontal angulation"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    },
-    {
-      "question": "What is the function of the lead apron?",
-      "answer": "Shields reproductive organs from scatter radiation",
-      "options": [
-        "Improves image sharpness",
-        "Increases contrast",
-        "Shields reproductive organs from scatter radiation",
-        "Filters the primary beam"
-      ]
-    },
-    {
-      "question": "Which error creates a blurry image?",
-      "answer": "Movement during exposure",
-      "options": [
-        "Insufficient exposure",
-        "Incorrect film speed",
-        "Movement during exposure",
-        "Expired film"
-      ]
-    },
-    {
-      "question": "Why is the paralleling technique preferred?",
-      "answer": "It produces the most accurate image with minimal distortion",
-      "options": [
-        "It is faster",
-        "It uses less radiation",
-        "It produces the most accurate image with minimal distortion",
-        "It requires fewer instruments"
-      ]
-    },
-    {
-      "question": "How should film be stored?",
-      "answer": "In a cool, dry place away from radiation",
-      "options": [
-        "In a lead-lined cabinet",
-        "Under bright light",
-        "In a warm area",
-        "In a cool, dry place away from radiation"
-      ]
-    },
-    {
-      "question": "Which condition causes radiographic fog?",
-      "answer": "Exposure to scatter or secondary radiation",
-      "options": [
-        "Insufficient washing",
-        "Exposure to scatter or secondary radiation",
-        "Incorrect mA setting",
-        "Developer contamination"
-      ]
-    }
-  ];
-  
-  export default flashcards;
+  {
+    question: "What is the primary purpose of the aluminum filter in the x-ray tubehead?",
+    answer: "Removes low-energy, long-wavelength x-rays",
+    options: [
+      "Reduces scatter radiation",
+      "Increases image sharpness",
+      "Removes low-energy, long-wavelength x-rays",
+      "Collimates the x-ray beam"
+    ],
+    explanation: "The aluminum filter absorbs less penetrating x-rays that would increase patient dose without contributing to image quality."
+  },
+  {
+    question: "Which radiograph is best for evaluating interproximal decay?",
+    answer: "Bitewing",
+    options: [
+      "Occlusal",
+      "Bitewing",
+      "Panoramic",
+      "Periapical"
+    ],
+    explanation: "Bitewings are specifically designed to show the crowns of upper and lower teeth and interproximal areas for detecting caries."
+  },
+  {
+    question: "What causes elongation in dental radiographs?",
+    answer: "Vertical angulation too shallow",
+    options: [
+      "Vertical angulation too steep",
+      "Horizontal angulation incorrect",
+      "Vertical angulation too shallow",
+      "Improper film placement"
+    ],
+    explanation: "Elongation occurs when the x-ray beam is not steep enough, projecting an extended image of the teeth."
+  },
+  {
+    question: "What is the purpose of a thyroid collar?",
+    answer: "Protects the thyroid gland from scatter radiation",
+    options: [
+      "Improves patient positioning",
+      "Reduces film fogging",
+      "Protects the thyroid gland from scatter radiation",
+      "Reduces motion artifacts"
+    ],
+    explanation: "The thyroid gland is highly sensitive to radiation, and a thyroid collar helps minimize unnecessary exposure."
+  },
+  {
+    question: "Which radiographic error results in clear areas where no image is present?",
+    answer: "Cone cut",
+    options: [
+      "Double exposure",
+      "Overexposure",
+      "Cone cut",
+      "Developer stain"
+    ],
+    explanation: "Cone cut occurs when part of the receptor is not exposed to radiation due to improper PID alignment."
+  },
+  {
+    question: "Which tissue type is the least radiosensitive?",
+    answer: "Muscle",
+    options: [
+      "Bone marrow",
+      "Intestinal lining",
+      "Muscle",
+      "Skin"
+    ],
+    explanation: "Muscle cells are more specialized and divide less frequently, making them less sensitive to ionizing radiation."
+  },
+  {
+    question: "What setting primarily affects radiographic contrast?",
+    answer: "Kilovoltage (kVp)",
+    options: [
+      "Milliamperage (mA)",
+      "Exposure time",
+      "Kilovoltage (kVp)",
+      "Film speed"
+    ],
+    explanation: "Higher kilovoltage creates more penetrating x-rays and reduces contrast, while lower kVp increases contrast."
+  },
+  {
+    question: "What size film is commonly used for adult periapical radiographs?",
+    answer: "Size 2",
+    options: [
+      "Size 0",
+      "Size 1",
+      "Size 2",
+      "Size 3"
+    ],
+    explanation: "Size 2 film is the standard choice for adult periapical views because it fits most adult mouths comfortably."
+  },
+  {
+    question: "Which structure appears most radiopaque on dental x-rays?",
+    answer: "Enamel",
+    options: [
+      "Dentin",
+      "Cementum",
+      "Enamel",
+      "Pulp"
+    ],
+    explanation: "Enamel is the most mineralized and dense structure in the tooth, appearing whitest or most radiopaque."
+  },
+  {
+    question: "What type of radiation is responsible for the majority of x-rays produced in a dental x-ray tube?",
+    answer: "Bremsstrahlung radiation",
+    options: [
+      "Scatter radiation",
+      "Characteristic radiation",
+      "Bremsstrahlung radiation",
+      "Secondary radiation"
+    ],
+    explanation: "Bremsstrahlung radiation is generated when high-speed electrons slow down near the nucleus of the tungsten target, producing the majority of usable x-rays."
+  }
+];
+export default flashcards;
