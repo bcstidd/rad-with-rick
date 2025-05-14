@@ -337,15 +337,16 @@ background-color: #A35752;
 =========================== */
 
 .explanation {
-background-color: #999;
+background-color:#fff;
 border-left: 4px solid #008080;
-color: #333;
+color: #003838;
 font-size: 0.95rem;
+font-weight: 500;
 padding: 0.75rem;
 margin-top: 1rem;
 border-radius: 6px;
 text-align: left;
-opacity: 0.3;
+opacity: 0.6;
 }
 
 body.dark .explanation {

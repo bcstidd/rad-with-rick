@@ -304,37 +304,48 @@ const flashcards = [
     "explanation": "During the latent period, the cells exposed to radiation undergo damage that accumulates over time, eventually leading to the development of disease."
   },
   {
-    "question": "What is the MPD (maximum permissible dose) for occupational exposure annually?",
-    "answer": "5.0 rem (50 mSv)",
+    "question": "Which error results in a clear or blank film?",
+    "answer": "Failure to expose film to x-rays",
     "options": [
-      "0.5 rem",
-      "5.0 rem (50 mSv)",
-      "50 rem",
-      "0.05 mSv"
-    ],
-    "explanation": "Occupational MPD is 5.0 rem per year according to regulatory guidelines."
+        "Overexposure",
+        "Improper fixing",
+        "Failure to expose film to x-rays",
+        "Double exposure"
+      ],
+      "explanation": "If the film is not exposed to radiation, it remains completely clear after processing."
   },
   {
-    "question": "What is the function of the collimator in a dental x-ray machine?",
-    "answer": "Restricts the size of the x-ray beam",
+    "question": "Which factor controls the quality (energy) of x-rays produced?",
+    "answer": "Kilovoltage (kVp)",
     "options": [
-      "Increases image contrast",
-      "Removes scatter radiation",
-      "Restricts the size of the x-ray beam",
-      "Measures exposure time"
-    ],
-    "explanation": "The collimator narrows the x-ray beam to reduce patient exposure and improve image quality."
+      "Milliamperage",
+      "Exposure time",
+      "Kilovoltage (kVp)",
+      "Filtration"
+      ],
+    "explanation": "Kilovoltage determines the speed of electrons, thus controlling the x-ray beam's penetrating power."
+  },  
+  {
+    "question": "Which component removes the low-energy, long-wavelength x-rays from the beam?",
+    "answer": "Filter",
+    "options": [
+      "Collimator",
+      "Anode",
+      "Filter",
+      "Cathode"
+      ],
+    "explanation": "The filter absorbs weaker x-rays to improve beam quality and reduce patient exposure."
   },
   {
-    "question": "Which radiograph is best for evaluating unerupted third molars?",
-    "answer": "Panoramic radiograph",
+    "question": "What type of radiograph is used to evaluate the floor of the mouth?",
+    "answer": "Occlusal radiograph",
     "options": [
-      "Bitewing",
       "Periapical",
-      "Panoramic radiograph",
-      "Occlusal"
+      "Panoramic",
+      "Bitewing",
+      "Occlusal radiograph"
     ],
-    "explanation": "A panoramic image shows the entire dentition including unerupted and impacted teeth."
+    "explanation": "Occlusal films provide a broad view of the floor of the mouth and palate."
   },
   {
     "question": "Which technique provides the most accurate image with minimal distortion?",
@@ -392,15 +403,15 @@ const flashcards = [
     "explanation": "The fixer makes the image permanent by clearing unexposed crystals from the film."
   },
   {
-    "question": "What causes overlapping contacts on a bitewing radiograph?",
-    "answer": "Incorrect horizontal angulation",
+    "question": "What is the minimum total filtration required for machines operating above 70 kVp?",
+    "answer": "2.5 mm aluminum",
     "options": [
-      "Incorrect vertical angulation",
-      "Too much exposure time",
-      "Incorrect horizontal angulation",
-      "Patient movement"
+      "1.5 mm aluminum",
+      "2.0 mm aluminum",
+      "2.5 mm aluminum",
+      "3.0 mm aluminum"
     ],
-    "explanation": "When the beam is not directed perpendicular to the interproximal spaces, the contacts will appear overlapped."
+    "explanation": "Regulations mandate 2.5 mm of filtration for higher-energy x-ray machines."
   },
   {
     "question": "Which is a sign of caries on a dental radiograph?",
@@ -424,179 +435,57 @@ const flashcards = [
   },     
   {'question': 'What is the purpose of the lead foil in a film packet?', 'answer': 'Absorbs scattered radiation', 'options': ['Reflects radiation', 'Protects from saliva', 'Absorbs scattered radiation', 'Enhances image sharpness'], 'explanation': 'The lead foil reduces patient exposure and prevents backscatter radiation.'
   }, 
-  {
-    "question": "What is the function of the collimator in a dental x-ray machine?",
-    "answer": "Restricts the size of the x-ray beam",
-    "options": [
-      "Increases image contrast",
-      "Removes scatter radiation",
-      "Restricts the size of the x-ray beam",
-      "Measures exposure time"
-    ],
-    "explanation": "The collimator narrows the x-ray beam to reduce patient exposure and improve image quality."
-  },
-  {
-    "question": "Which radiograph is best for evaluating unerupted third molars?",
-    "answer": "Panoramic radiograph",
-    "options": [
-      "Bitewing",
-      "Periapical",
-      "Panoramic radiograph",
-      "Occlusal"
-    ],
-    "explanation": "A panoramic image shows the entire dentition including unerupted and impacted teeth."
-  },
-  {
-    "question": "What causes overlapping contacts on a bitewing radiograph?",
-    "answer": "Incorrect horizontal angulation",
-    "options": [
-      "Incorrect vertical angulation",
-      "Too much exposure time",
-      "Incorrect horizontal angulation",
-      "Patient movement"
-    ],
-    "explanation": "When the beam is not directed perpendicular to the interproximal spaces, the contacts will appear overlapped."
-  },
-  {
-    "question": "What does the fixer do in film processing?",
-    "answer": "Removes unexposed silver halide crystals",
-    "options": [
-      "Hardens the film",
-      "Develops the latent image",
-      "Removes unexposed silver halide crystals",
-      "Washes the film"
-    ],
-    "explanation": "The fixer clears the film by removing undeveloped crystals, making the image permanent."
-  },
-  {
-    "question": "What is the MPD (maximum permissible dose) for occupational exposure annually?",
-    "answer": "5.0 rem (50 mSv)",
-    "options": [
-      "0.5 rem",
-      "5.0 rem (50 mSv)",
-      "50 rem",
-      "0.05 mSv"
-    ],
-    "explanation": "Occupational MPD is 5.0 rem per year according to regulatory guidelines."
-  },
-  {
-    "question": "What is the function of the collimator in a dental x-ray machine?",
-    "answer": "Restricts the size of the x-ray beam",
-    "options": [
-      "Increases image contrast",
-      "Removes scatter radiation",
-      "Restricts the size of the x-ray beam",
-      "Measures exposure time"
-    ],
-    "explanation": "The collimator narrows the x-ray beam to reduce patient exposure and improve image quality."
-  },
-  {
-    "question": "Which radiograph is best for evaluating unerupted third molars?",
-    "answer": "Panoramic radiograph",
-    "options": [
-      "Bitewing",
-      "Periapical",
-      "Panoramic radiograph",
-      "Occlusal"
-    ],
-    "explanation": "A panoramic image shows the entire dentition including unerupted and impacted teeth."
-  },
-  {
-    "question": "What causes overlapping contacts on a bitewing radiograph?",
-    "answer": "Incorrect horizontal angulation",
-    "options": [
-      "Incorrect vertical angulation",
-      "Too much exposure time",
-      "Incorrect horizontal angulation",
-      "Patient movement"
-    ],
-    "explanation": "When the beam is not directed perpendicular to the interproximal spaces, the contacts will appear overlapped."
-  },
-  {
-    "question": "What does the fixer do in film processing?",
-    "answer": "Removes unexposed silver halide crystals",
-    "options": [
-      "Hardens the film",
-      "Develops the latent image",
-      "Removes unexposed silver halide crystals",
-      "Washes the film"
-    ],
-    "explanation": "The fixer clears the film by removing undeveloped crystals, making the image permanent."
-  },
-  {
-    "question": "What is the MPD (maximum permissible dose) for occupational exposure annually?",
-    "answer": "5.0 rem (50 mSv)",
-    "options": [
-      "0.5 rem",
-      "5.0 rem (50 mSv)",
-      "50 rem",
-      "0.05 mSv"
-    ],
-    "explanation": "Occupational MPD is 5.0 rem per year according to regulatory guidelines."
-  },
-  {
-    "question": "What is the function of the collimator in a dental x-ray machine?",
-    "answer": "Restricts the size of the x-ray beam",
-    "options": [
-      "Increases image contrast",
-      "Removes scatter radiation",
-      "Restricts the size of the x-ray beam",
-      "Measures exposure time"
-    ],
-    "explanation": "The collimator narrows the x-ray beam to reduce patient exposure and improve image quality."
-  },
-  {
-    "question": "Which radiograph is best for evaluating unerupted third molars?",
-    "answer": "Panoramic radiograph",
-    "options": [
-      "Bitewing",
-      "Periapical",
-      "Panoramic radiograph",
-      "Occlusal"
-    ],
-    "explanation": "A panoramic image shows the entire dentition including unerupted and impacted teeth."
-  },
-  {
-    "question": "What causes overlapping contacts on a bitewing radiograph?",
-    "answer": "Incorrect horizontal angulation",
-    "options": [
-      "Incorrect vertical angulation",
-      "Too much exposure time",
-      "Incorrect horizontal angulation",
-      "Patient movement"
-    ],
-    "explanation": "When the beam is not directed perpendicular to the interproximal spaces, the contacts will appear overlapped."
-  },
   {'question': 'What type of radiograph shows the crown and interproximal areas of both arches', 'answer': 'Bitewing', 
     'options': 
     ['Occlusal', 
       'Periapical', 
       'Bitewing', 
       'Panoramic'], 
-    'explanation': 'Bitewings are used to detect interproximal caries and monitor crestal bone levels.'}, 
-
+    'explanation': 'Bitewings are used to detect interproximal caries and monitor crestal bone levels.'
+  }, 
   {
-    "question": "What does the fixer do in film processing?",
-    "answer": "Removes unexposed silver halide crystals",
+    "question": "What is the most critical protection measure for the operator during exposure?",
+    "answer": "Distance and shielding",
     "options": [
-      "Hardens the film",
-      "Develops the latent image",
-      "Removes unexposed silver halide crystals",
-      "Washes the film"
-    ],
-    "explanation": "The fixer clears the film by removing undeveloped crystals, making the image permanent."
-  },
-  {
-    "question": "What is the MPD (maximum permissible dose) for occupational exposure annually?",
-    "answer": "5.0 rem (50 mSv)",
+      "Increasing exposure time",
+      "Standing behind the patient",
+      "Distance and shielding",
+      "Standing in front of x-ray beam"
+      ],
+    "explanation": "Operators must stand behind protective barriers or 6 feet away at 90-135 degrees."
+    },
+    {
+    "question": "How is film density affected by increasing mA settings?",
+    "answer": "Film becomes darker",
     "options": [
-      "0.5 rem",
-      "5.0 rem (50 mSv)",
-      "50 rem",
-      "0.05 mSv"
-    ],
-    "explanation": "Occupational MPD is 5.0 rem per year according to regulatory guidelines."
-  }
+      "Film becomes lighter",
+      "Film becomes sharper",
+      "Film becomes darker",
+      "Film is unaffected"
+      ],
+    "explanation": "Higher mA increases the quantity of x-rays, darkening the image."
+    },
+    {
+      "question": "What is the standard intraoral film size for a posterior PA on an adult?",
+      "answer": "2",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "3"
+      ],
+      "explanation" : "The standard intraoral film size is typically size 2. This film size is 1.2 x 1.7 inches (3 x 4.5 cm). It's commonly used for periapical and bitewing radiographs, which are used to diagnose caries, assess bone levels, and examine the teeth and surrounding structures."
+    },
+    {
+      "question": "Which is the correct series in the generation of x-rays?",
+      "answer": "Cathode, Anode, Target",
+      "options":[
+        "Target, Anode, Cathode",
+        "Anode, Cathode, Target",
+        "Cathode, Anode, Target",
+        "Focusing cup, Aluminum filter, Collimator"
+      ],
+      "explanation": "X-ray production involves four key steps: 1) thermionic emission: The filament in the X-ray tube is heated, causing electrons to boil off and form a cloud around the filament(in the cathode). 2) Electron acceleration: A high voltage is applied across the tube, accelerating the electrons towards the positively charged (anode). 3) Electron-target interaction: The accelerated electrons collide with the anode (target), releasing energy in the form of X-ray photons. 4) X-ray emission: The X-ray photons are emitted from the anode and travel towards the patient or the detector. "
+    }
 ];
-
 export default flashcards;
