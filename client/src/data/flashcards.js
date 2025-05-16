@@ -12,6 +12,18 @@ const flashcards = [
     image: "/quiz-images/pano-sinus.png"
   },
   {
+    "question": "Which anatomical structure appears radiolucent near the apices of mandibular premolars and can be mistaken for pathology?",
+    "answer": "Mental foramen",
+    "options": [
+      "Inferior alveolar nerve",
+      "Mental foramen",
+      "Incisive foramen",
+      "Dental abscess"
+    ],
+    "explanation": "The mental foramen is often near the premolar area, showing as a small radiolucent “dot” that can be confused with an abscess if you aren not familiar with normal anatomy.",
+    image: "/quiz-images/mental-foramen.jpeg"
+  },
+  {
     "question": "What is the function of the collimator in a dental x-ray machine?",
     "answer": "Restricts the size of the x-ray beam",
     "options": [
@@ -227,7 +239,8 @@ const flashcards = [
       "Incisive foramen",
       "Dental abscess"
     ],
-    "explanation": "The mental foramen is often near the premolar area, showing as a small radiolucent “dot” that can be confused with an abscess if you aren not familiar with normal anatomy."
+    "explanation": "The mental foramen is often near the premolar area, showing as a small radiolucent “dot” that can be confused with an abscess if you aren not familiar with normal anatomy.",
+    image: "mental-foramen.jpeg"
   },
   {
     "question": "Which of the following would be the most radiolucent?",
