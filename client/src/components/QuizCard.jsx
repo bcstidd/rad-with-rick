@@ -11,7 +11,21 @@ export default function QuizCard({
 }) {
   return (
     <div className={`quiz-card ${hidden ? 'hidden' : ''}`}>
+      {/* Optional Image Display */}
+      {card.image && (
+        <div className="quiz-image-wrapper">
+          <img
+            src={card.image}
+            alt="Quiz visual"
+            className="quiz-image"
+          />
+        </div>
+      )}
+
+      {/* Question */}
       <p className="question">{card.question}</p>
+
+      {/* Answer Options */}
       <ul className={`options ${showAnswer ? 'answered' : ''}`}>
         {card.options.map((option, index) => {
           let className = ''
@@ -35,6 +49,7 @@ export default function QuizCard({
         })}
       </ul>
 
+      {/* Explanation Trigger */}
       {showAnswer && (
         <div className='ytho-container'>
           <img
@@ -48,6 +63,7 @@ export default function QuizCard({
         </div>
       )}
 
+      {/* Explanation Content */}
       {showAnswer && showExplanation && (
         <p className="explanation">{card.explanation}</p>
       )}

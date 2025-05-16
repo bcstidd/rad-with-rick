@@ -1,5 +1,17 @@
 const flashcards = [
   {
+    question: "What anatomical landmark is visible in this radiograph?",
+    answer: "Maxillary sinus",
+    options: [
+      "Mental foramen",
+      "Mandibular canal",
+      "Maxillary sinus",
+      "Nasal spine"
+    ],
+    explanation: "The maxillary sinus is a radiolucent area seen superior to the posterior teeth in maxillary radiographs.",
+    image: "/quiz-images/pano-sinus.png"
+  },
+  {
     "question": "What is the function of the collimator in a dental x-ray machine?",
     "answer": "Restricts the size of the x-ray beam",
     "options": [
