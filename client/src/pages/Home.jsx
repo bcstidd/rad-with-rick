@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="container">
       <h2 className="hero-title">
-        Welcome to RAD With Rick 🧠
+        Welcome to RAD With Rick 🧠 
       </h2>
       <p className="hero-subtitle">
         This app is built to help you review dental radiology and pass the DANB exam.

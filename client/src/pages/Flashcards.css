@@ -176,6 +176,23 @@ body.dark .quiz-card.flipped {
   justify-content: center;
   align-items: center;
 }
+.ytho-container {
+  display: flex;
+  justify-content: center;
+  margin-left: 200px;
+}
+.ytho-text {
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  padding: 2px;
+  margin: 16px;
+  font-weight: 800;
+
+}
+img.ytho {
+  justify-self: center;
+}
 /* Responsive */
 @media (max-width: 600px) {
   .quiz-footer {
