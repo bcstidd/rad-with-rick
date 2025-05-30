@@ -6,7 +6,7 @@ export default function About () {
             <p className="about-text">This application and all its contents were developed independently by Brittany Stidd and are not affiliated with or owned by any other entity.</p>
             <div className="about-logo-container">
             <div className="about-logo">
-                <img src="./public/icons/logo.jpg" alt="logo" />&trade;
+                <img src="/icons/logo.jpg" alt="logo" />&trade;
             </div>
             </div>
         </div>
