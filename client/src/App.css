@@ -54,7 +54,17 @@ color: #f4b400;
 /* ===========================
  Logo + Branding
 =========================== */
+.about-logo-container {
+  display: flex;
+  justify-content: center;
+}
 
+.about-logo img {
+ height: 250px;
+ border-radius: 180px;
+ justify-self: center;
+ align-self: center;
+}
 .logo {
 height: 6em;
 padding: 1.5em;
