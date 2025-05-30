@@ -6,6 +6,7 @@ import flashcards from '../data/flashcards'
 export default function FlashcardFlip() {
   const [index, setIndex] = useState(0)
   const [flipped, setFlipped] = useState(false)
+  const card = flashcards[index]
 
   const handleNext = () => {
     setFlipped(false)
@@ -21,6 +22,12 @@ export default function FlashcardFlip() {
         className={`quiz-card ${flipped ? 'flipped' : ''}`}
         onClick={() => setFlipped(!flipped)}
       >
+        {card.image && (
+  <div className="flashcard-image-wrapper">
+    <img src={card.image} alt="Flashcard visual" className="flashcard-image" />
+  </div>
+)}
+
         {flipped ? flashcards[index].answer : flashcards[index].question}
       </div>
       <button onClick={handleNext} className="next-btn">Next</button>
