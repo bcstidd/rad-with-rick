@@ -1,7 +1,7 @@
 // src/components/Header.jsx
 
 import { Link } from 'react-router-dom'
-import logo from '/icons/logo.jpg'
+import logo from '/icons/favicon.png'
 
 export default function Header() {
   return (
