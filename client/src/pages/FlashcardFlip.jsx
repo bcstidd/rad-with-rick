@@ -20,13 +20,12 @@ export default function FlashcardFlip() {
       <p className="progress">Card {index + 1} of {flashcards.length}</p>
       <div
         className={`quiz-card ${flipped ? 'flipped' : ''}`}
-        onClick={() => setFlipped(!flipped)}
-      >
-        {card.image && (
-  <div className="flashcard-image-wrapper">
-    <img src={card.image} alt="Flashcard visual" className="flashcard-image" />
-  </div>
-)}
+        onClick={() => setFlipped(!flipped)}>
+      {card.image && (
+      <div className="flashcard-image-wrapper">
+      <img src={card.image} alt="Flashcard visual" className="flashcard-image" />
+    </div>
+  )}
 
         {flipped ? flashcards[index].answer : flashcards[index].question}
       </div>

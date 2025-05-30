@@ -156,7 +156,7 @@ background-color: #008080;
 color: white;
 padding: 0.5rem 1rem;
 display: flex;
-justify-content: center;
+justify-content: space-between;
 align-items: center;
 border-top: 2px solid #004d4d;
 }
@@ -164,7 +164,14 @@ border-top: 2px solid #004d4d;
 body.dark footer {
 background-color: #004d4d;
 }
-
+.tm {
+  font-weight: 100;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  opacity: 30%;
+  /* margin-right: 10px; */
+  font-size: small;
+}
 .toggle-theme {
 background: transparent;
 border: none;
