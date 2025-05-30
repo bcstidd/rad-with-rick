@@ -3,7 +3,7 @@
 export default function Footer({ toggleDarkMode, isDarkMode }) {
     return (
       <footer className="footer">
-        <p className="tm">Copyright Brittany Stidd, 2025</p>
+        <p className="tm">RAD With Rick&trade; Brittany Stidd, 2025. All rights Reserved &copy;&trade;</p>
         <button
           className="toggle-theme"
           onClick={toggleDarkMode}
