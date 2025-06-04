@@ -8,7 +8,7 @@ const flashcards = [
       "Maxillary sinus",
       "Nasal spine"
     ],
-    explanation: "The maxillary sinus is a radiolucent area seen superior to the posterior teeth in maxillary radiographs.",
+    explanation: "The maxillary sinus is a radiolucent area seen superior (above) to the posterior (back) teeth in maxillary (upper) radiographs.",
     image: "/quiz-images/pano-sinus.png"
   },
   {
@@ -20,7 +20,7 @@ const flashcards = [
       "Incisive foramen",
       "Dental abscess"
     ],
-    "explanation": "The mental foramen is often near the premolar area, showing as a small radiolucent “dot” that can be confused with an abscess if you aren not familiar with normal anatomy.",
+    "explanation": "The mental foramen is often near the premolar area, showing as a small radiolucent “dot” that can be confused with an abscess if you are not familiar with normal anatomy.",
     image: "/quiz-images/mental-foramen.jpeg"
   },
   {

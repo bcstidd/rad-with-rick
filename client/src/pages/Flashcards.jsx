@@ -83,24 +83,28 @@ export default function Flashcards() {
 
       {/* Quiz Header */}
       <div className="quiz-header">
+        <h2 className="mode-title">Quiz Mode</h2>
         <div className="mode-progress">
-          <h2 className="mode-title">Quiz Mode</h2>
-          <p className="progress">Question {currentIndex + 1} of {questionSet.length}</p>
+          <p className="progress">Card {currentIndex + 1} of {questionSet.length}</p>
+          <p className="score">Score: {score}</p>
         </div>
-        <p className="score">Score: {score}</p>
       </div>
 
       {/* Quiz Card */}
       <div className="quiz-main">
-        <QuizCard
-          card={currentCard}
-          hidden={hidden}
-          selectedOption={selectedOption}
-          showAnswer={showAnswer}
-          showExplanation={showExplanation}
-          onOptionClick={handleOptionClick}
-          onToggleExplanation={() => setShowExplanation(!showExplanation)}
-        />
+        <div className="quiz-card">
+          <div className="quiz-card-content">
+            <QuizCard
+              card={currentCard}
+              hidden={hidden}
+              selectedOption={selectedOption}
+              showAnswer={showAnswer}
+              showExplanation={showExplanation}
+              onOptionClick={handleOptionClick}
+              onToggleExplanation={() => setShowExplanation(!showExplanation)}
+            />
+          </div>
+        </div>
       </div>
 
       {/* Quiz Navigation */}
