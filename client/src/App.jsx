@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
 import FlashcardModeSelect from './pages/FlashcardModeSelect'
@@ -9,7 +9,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Reference from './pages/Reference'
 import './App.css'
-
 
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -27,25 +26,34 @@ export default function App() {
 
   return (
     <Router>
-      <div className="app-wrapper">
-        <Header />
-        <main className="container">
-          <div className='screen-body'>
-            <div className='main-content'>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/flashcards" element={<FlashcardModeSelect />} />
-            <Route path="/flashcards/quiz" element={<Flashcards />} />
-            <Route path="/flashcards/study" element={<FlashcardFlip />} />
-            <Route path="/reference" element={<Reference />} />
-            {/* <Route path="/info" element={<Info />} /> */}
-          </Routes>
-          </div>
-          </div>
-        </main>
-        <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
-      </div>
+      <AppLayout isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
     </Router>
+  )
+}
+
+function AppLayout({ isDarkMode, toggleDarkMode }) {
+  const location = useLocation()
+  const isReference = location.pathname === '/reference'
+
+  return (
+    <div className="app-wrapper">
+      <Header />
+      <main className={`container${isReference ? ' reference-layout' : ''}`}>
+        <div className='screen-body'>
+          <div className='main-content'>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/flashcards" element={<FlashcardModeSelect />} />
+              <Route path="/flashcards/quiz" element={<Flashcards />} />
+              <Route path="/flashcards/study" element={<FlashcardFlip />} />
+              <Route path="/reference" element={<Reference />} />
+              {/* <Route path="/info" element={<Info />} /> */}
+            </Routes>
+          </div>
+        </div>
+      </main>
+      <Footer isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+    </div>
   )
 }

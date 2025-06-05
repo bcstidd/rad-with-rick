@@ -127,22 +127,24 @@ body.dark .score {
 .prev-btn:hover,
 .next-btn:hover {
   background-color: #008080;
-  .flashcard {
-    background: #f2f2f2;
-    color: #000;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-    padding: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .flashcard.flipped {
-    background: #008080; /* Emerald or jewel tone */
-    color: #fff;
-  }
-  /* Flashcard flip animation */
+}
+
+.flashcard {
+  background: #f2f2f2;
+  color: #000;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.flashcard.flipped {
+  background: #008080; /* Emerald or jewel tone */
+  color: #fff;
+}
+/* Flashcard flip animation */
 .quiz-card.flashcard {
   perspective: 1000px;
 }
@@ -161,15 +163,8 @@ body.dark .score {
 .card-back {
   transform: rotateY(180deg);
 }
-
-}
 .options li:hover {
   background-color: #e0e0e0;
-}
-
-.options.answered li:hover {
-  background-color: inherit;
-  cursor: default;
 }
 /* Base hover effect (only when not answered) */
 .options:not(.answered) li:hover {
@@ -182,7 +177,6 @@ body.dark .score {
   background-color: inherit;
   cursor: default;
 }
-
 
 body.dark .quiz-card.flipped {
   background-color: #046C6C;
@@ -242,7 +236,7 @@ img.ytho {
     justify-content: center;
     align-items: center;
   }
-  
+
   .quiz-image {
     max-width: 100%;
     height: auto;

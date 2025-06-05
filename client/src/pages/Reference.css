@@ -82,7 +82,11 @@ body.dark .accordion-content {
   background-color: #2a2a2a;
 }
 
-.reference-page {
+.container.reference-page {
+  max-width: 1000px;
+}
+
+body.dark .container.reference-page {
   max-width: 1000px;
 }
 
