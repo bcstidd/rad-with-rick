@@ -7,6 +7,7 @@ import FlashcardFlip from './pages/FlashcardFlip'
 import Flashcards from './pages/Flashcards'
 import Header from './components/Header'
 import Footer from './components/Footer'
+import Reference from './data/reference'
 import './App.css'
 
 
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/flashcards" element={<FlashcardModeSelect />} />
             <Route path="/flashcards/quiz" element={<Flashcards />} />
             <Route path="/flashcards/study" element={<FlashcardFlip />} />
+            <Route path="/reference" element={<Reference />} />
             {/* <Route path="/info" element={<Info />} /> */}
           </Routes>
           </div>
