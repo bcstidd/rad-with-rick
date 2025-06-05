@@ -19,15 +19,26 @@ export default function FlashcardFlip() {
       <h2>Flashcard Mode</h2>
       <p className="progress">Card {index + 1} of {flashcards.length}</p>
       <div
-         className={`quiz-card flashcard ${flipped ? 'flipped' : ''}`}
-        onClick={() => setFlipped(!flipped)}>
-      {card.image && (
-      <div className="flashcard-image-wrapper">
-      <img src={card.image} alt="Flashcard visual" className="flashcard-image" />
-    </div>
-  )}
-
-        {flipped ? flashcards[index].answer : flashcards[index].question}
+        className={`quiz-card flashcard ${flipped ? 'flipped' : ''}`}
+        onClick={() => setFlipped(!flipped)}
+      >
+        <div className="card-inner">
+          <div className="card-face card-front">
+            {card.image && (
+              <div className="flashcard-image-wrapper">
+                <img
+                  src={card.image}
+                  alt="Flashcard visual"
+                  className="flashcard-image"
+                />
+              </div>
+            )}
+            {flashcards[index].question}
+          </div>
+          <div className="card-face card-back">
+            {flashcards[index].answer}
+          </div>
+        </div>
       </div>
       <button onClick={handleNext} className="next-btn">Next</button>
     </div>

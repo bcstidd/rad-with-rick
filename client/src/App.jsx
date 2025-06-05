@@ -9,6 +9,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import './App.css'
 
+
 export default function App() {
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const stored = localStorage.getItem('dark')
@@ -36,6 +37,7 @@ export default function App() {
             <Route path="/flashcards" element={<FlashcardModeSelect />} />
             <Route path="/flashcards/quiz" element={<Flashcards />} />
             <Route path="/flashcards/study" element={<FlashcardFlip />} />
+            {/* <Route path="/info" element={<Info />} /> */}
           </Routes>
           </div>
           </div>
