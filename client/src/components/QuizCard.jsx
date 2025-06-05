@@ -55,7 +55,8 @@ export default function QuizCard({
           <img
             src={ytho}
             alt="Why is this correct/incorrect?"
-            className="ytho"
+                        className={`ytho ${showExplanation ? 'active' : ''}`}
+
             onClick={onToggleExplanation}
             draggable="false"
           />
@@ -64,8 +65,8 @@ export default function QuizCard({
       )}
 
       {/* Explanation Content */}
-      {showAnswer && showExplanation && (
-        <p className="explanation">{card.explanation}</p>
+       {showAnswer && (
+        <p className={`explanation ${showExplanation ? 'show' : ''}`}>{card.explanation}</p>
       )}
     </div>
   )

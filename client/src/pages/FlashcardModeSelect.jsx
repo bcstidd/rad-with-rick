@@ -9,10 +9,10 @@ export default function FlashcardModeSelect() {
   <h2 className='mode-text'>Select Study Mode</h2>
   <div className="quiz-type-buttons">
     <button onClick={() => navigate('/flashcards/quiz')}>
-      Quiz Mode 🧠
+      Quiz Mode 
     </button>
     <button onClick={() => navigate('/flashcards/study')}>
-      Flashcard Mode 📇
+      Flashcard Mode 
     </button>
   </div>
 </div>

@@ -179,7 +179,8 @@ body.dark .quiz-card.flipped {
 .ytho-container {
   display: flex;
   justify-content: center;
-  margin-left: 200px;
+  align-items: center;
+  gap: 0.5rem;
 }
 .ytho-text {
   display: flex;

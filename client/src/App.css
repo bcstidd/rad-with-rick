@@ -378,23 +378,30 @@ background-color: #A35752;
 =========================== */
 
 .explanation {
-background-color:#fff;
-border-left: 4px solid #008080;
-color: #003838;
-font-size: 0.95rem;
-font-weight: 500;
-padding: 0.75rem;
-margin-top: 1rem;
-border-radius: 6px;
-text-align: left;
-opacity: 0.6;
+  background-color:#fff;
+  border-left: 4px solid #008080;
+  color: #003838;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border-radius: 6px;
+  text-align: left;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
 body.dark .explanation {
-background-color: #444;
-border-left-color: #008080;
-color: #ccc;
-opacity: 0.8;
+  background-color: #444;
+  border-left-color: #008080;
+  color: #ccc;
+}
+
+.explanation.show {
+  opacity: 0.8;
+  max-height: 500px;
 }
 
 /* ===========================
@@ -479,11 +486,15 @@ body.dark,
   justify-content: center;
 }
 p.ytho-text {
-  margin-right: 380px;
+ margin: 0 0 0 0.5rem;
 }
 img.ytho {
   height: 60px;
   border-radius: 6px;
+   transition: transform 0.3s ease;
+}
+img.ytho.active {
+  transform: rotate(10deg) scale(1.05);
 }
 body.dark p.hero-subtitle {
   color: #00B8A9;
