@@ -19,7 +19,7 @@ export default function FlashcardFlip() {
       <h2>Flashcard Mode</h2>
       <p className="progress">Card {index + 1} of {flashcards.length}</p>
       <div
-        className={`quiz-card ${flipped ? 'flipped' : ''}`}
+         className={`quiz-card flashcard ${flipped ? 'flipped' : ''}`}
         onClick={() => setFlipped(!flipped)}>
       {card.image && (
       <div className="flashcard-image-wrapper">
