@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import reference from '../data/reference';
-
+import './Reference.css';
 export default function Reference() {
   const [query, setQuery] = useState('');
   const [openCategory, setOpenCategory] = useState(null);

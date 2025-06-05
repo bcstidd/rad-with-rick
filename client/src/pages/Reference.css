@@ -1,8 +1,11 @@
 .accordion-section {
   border: 1px solid #ddd;
   border-radius: 6px;
+  border: 1px solid #008080;
+  border-radius: 8px;
   margin-bottom: 1rem;
   background: #fff;
+  overflow: hidden;
 }
 
 .accordion-header {
@@ -13,10 +16,14 @@
   align-items: center;
   background-color: #f3f3f3;
   transition: background 0.2s ease;
+  background-color: #008080;
+  color: #fff;
+  transition: background-color 0.2s ease;
 }
 
 .accordion-header:hover {
   background-color: #eaeaea;
+  background-color: #046C6C;
 }
 
 .accordion-header h3 {
@@ -26,6 +33,7 @@
 
 .accordion-content {
   padding: 0.75rem 1rem 1rem;
+  background-color: #fff;
 }
 
 .search-bar {
@@ -54,4 +62,22 @@
 .chevron {
   font-size: 0.9rem;
   margin-left: 10px;
+}
+
+body.dark .accordion-section {
+  background: #2a2a2a;
+  border-color: #003838;
+}
+
+body.dark .accordion-header {
+  background-color: #004d4d;
+  color: #f0f0f0;
+}
+
+body.dark .accordion-header:hover {
+  background-color: #003838;
+}
+
+body.dark .accordion-content {
+  background-color: #2a2a2a;
 }
