@@ -18,3 +18,10 @@
 .reference-list strong {
   color: #2a7ae2;
 }
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
