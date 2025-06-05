@@ -1,4 +1,4 @@
-import reference from '../pages/Reference.jsx';
+import reference from '../data/reference';
 
 export default function Reference() {
   return (

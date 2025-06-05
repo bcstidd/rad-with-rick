@@ -7,7 +7,7 @@ import FlashcardFlip from './pages/FlashcardFlip'
 import Flashcards from './pages/Flashcards'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import Reference from './data/reference'
+import Reference from './pages/Reference'
 import './App.css'
 
 
