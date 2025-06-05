@@ -1,13 +1,45 @@
-.container {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 1rem;
-  font-family: sans-serif;
+.accordion-section {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  background: #fff;
+}
+
+.accordion-header {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f3f3;
+  transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+  background-color: #eaeaea;
+}
+
+.accordion-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.accordion-content {
+  padding: 0.75rem 1rem 1rem;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
 }
 
 .reference-list {
   list-style-type: none;
-  padding: 0;
+  padding-left: 0;
+  margin: 0;
 }
 
 .reference-list li {
@@ -18,10 +50,8 @@
 .reference-list strong {
   color: #2a7ae2;
 }
-.search-bar {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 1rem;
-  border-radius: 8px;
-  border: 1px solid #ccc;
+
+.chevron {
+  font-size: 0.9rem;
+  margin-left: 10px;
 }
