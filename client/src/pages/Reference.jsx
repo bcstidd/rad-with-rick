@@ -1,4 +1,5 @@
 import reference from '../data/reference';
+import '../pages/Reference.css'
 
 export default function Reference() {
   return (

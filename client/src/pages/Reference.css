@@ -1,0 +1,20 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: sans-serif;
+}
+
+.reference-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.reference-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.reference-list strong {
+  color: #2a7ae2;
+}
