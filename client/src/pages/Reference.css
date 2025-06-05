@@ -81,3 +81,14 @@ body.dark .accordion-header:hover {
 body.dark .accordion-content {
   background-color: #2a2a2a;
 }
+
+.reference-page {
+  max-width: 1000px;
+}
+
+.accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
