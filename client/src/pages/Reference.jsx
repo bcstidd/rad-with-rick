@@ -1,9 +1,25 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import reference from '../data/reference';
 import './Reference.css';
+
 export default function Reference() {
   const [query, setQuery] = useState('');
   const [openCategory, setOpenCategory] = useState(null);
+
+  useEffect(() => {
+    // Hide the footer when the reference page is loaded
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.style.display = 'none';
+    }
+
+    // Show the footer again when the component is unmounted
+    return () => {
+      if (footer) {
+        footer.style.display = '';
+      }
+    };
+  }, []);
 
   const filtered = reference.filter((item) =>
     item.term.toLowerCase().includes(query.toLowerCase())
