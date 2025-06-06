@@ -1,22 +1,43 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
-const app = express();
+const dotenv = require('dotenv');
+const { OpenAI } = require('openai');
 
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
+
+const app = express();
 const PORT = process.env.PORT || 5050;
 
 app.use(cors());
 app.use(express.json());
 
-// Serve static files from the Vite frontend build
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
-// Optional API route
-app.get('/api/message', (req, res) => {
-  res.json({ message: 'This came from the backend 🎯' });
+// === OpenAI setup ===
+const openai = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY,
 });
 
-// Proper wildcard route — MUST use this format
+// === API route for OpenAI ===
+app.post('/api/chat', async (req, res) => {
+  const { message } = req.body;
+
+  try {
+    const response = await openai.chat.completions.create({
+      model: 'gpt-4',
+      messages: [{ role: 'user', content: message }],
+    });
+
+    res.json({ reply: response.choices[0].message.content });
+  } catch (error) {
+    console.error('OpenAI error:', error.message);
+    res.status(500).json({ error: 'Failed to fetch response from OpenAI' });
+  }
+});
+
+// === Serve static files from the Vite build ===
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+// === Wildcard route for React SPA ===
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
