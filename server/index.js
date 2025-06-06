@@ -26,7 +26,7 @@ app.post('/api/chat', async (req, res) => {
       model: 'gpt-4',
       messages: [{ role: 'user', content: message }],
     });
-
+    
     res.json({ reply: response.choices[0].message.content });
   } catch (error) {
     console.error('OpenAI error:', error.message);
@@ -34,6 +34,10 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+// === Health check route ===
+app.get('/api/message', (req, res) => {
+  res.json({ message: 'Server is running' });
+});
 // === Serve static files from the Vite build ===
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
@@ -45,3 +49,4 @@ app.get('/*', (req, res) => {
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+
