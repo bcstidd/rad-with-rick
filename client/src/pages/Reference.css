@@ -1,6 +1,4 @@
-.accordion-section {
-  border: 1px solid #ddd;
-  border-radius: 6px;
+/* /* .accordion-section {
   border: 1px solid #008080;
   border-radius: 8px;
   margin-bottom: 1rem;
@@ -14,15 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f3f3f3;
-  transition: background 0.2s ease;
   background-color: #008080;
   color: #fff;
   transition: background-color 0.2s ease;
 }
 
 .accordion-header:hover {
-  background-color: #eaeaea;
   background-color: #046C6C;
 }
 
@@ -62,7 +57,7 @@
 .chevron {
   font-size: 0.9rem;
   margin-left: 10px;
-}
+} */
 
 body.dark .accordion-section {
   background: #2a2a2a;
@@ -95,4 +90,419 @@ body.dark .container.reference-page {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1rem;
   align-items: start;
+}
+
+/* body.dark .container.reference-page h2 { */
+
+
+body.dark .search-bar {
+  background-color: #3a3a3a; /* Example: a darker background */
+  color: #f0f0f0; /* Example: light text color */
+  border-color: #555; /* Example: a darker border */
+}
+
+body.dark .reference-list strong {
+  color: #7ac2ff; /* Example: a different color for terms in dark mode */
+}
+
+body.dark .chevron {
+  color: #f0f0f0; /* Example: light color for the chevron */
+}
+Reference.css */
+
+/* Accordion Section */
+body .container.reference-page .accordion-section {
+  border: 1px solid #008080;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+body.dark .container.reference-page .accordion-section {
+  background: #2a2a2a;
+  border-color: #003838;
+}
+
+/* Accordion Header */
+body .container.reference-page .accordion-header {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #008080;
+  color: #fff;
+  transition: background-color 0.2s ease;
+}
+
+body.dark .container.reference-page .accordion-header {
+  background-color: #004d4d;
+  color: #f0f0f0;
+}
+
+body .container.reference-page .accordion-header:hover {
+  background-color: #046C6C;
+}
+
+body.dark .container.reference-page .accordion-header:hover {
+  background-color: #003838;
+}
+
+body .container.reference-page .accordion-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Accordion Content */
+body .container.reference-page .accordion-content {
+  padding: 0.75rem 1rem 1rem;
+  background-color: #fff;
+}
+
+body.dark .container.reference-page .accordion-content {
+  background-color: #2a2a2a;
+}
+
+/* Search Bar */
+body .container.reference-page .search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+body.dark .container.reference-page .search-bar {
+  background-color: #3a3a3a;
+  color: #f0f0f0;
+  border-color: #555;
+}
+
+/* Reference List */
+body .container.reference-page .reference-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+body .container.reference-page .reference-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+body .container.reference-page .reference-list strong {
+  color: #2a7ae2;
+}
+
+body.dark .container.reference-page .reference-list strong {
+  color: #7ac2ff;
+}
+
+/* Chevron */
+body .container.reference-page .chevron {
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+body.dark .container.reference-page .chevron {
+  color: #f0f0f0;
+}
+
+/* Container */
+body .container.reference-page {
+  max-width: 1000px;
+}
+
+body.dark .container.reference-page {
+  max-width: 1000px;
+}
+
+/* Accordion Grid */
+body .container.reference-page .accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+body.dark .container.reference-page .accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Title */
+body.dark .container.reference-page h2 {
+  color: #f0f0f0;
+}
+/* Reference.css */
+
+/* Accordion Section */
+.container.reference-page .accordion-section {
+  border: 1px solid var(--accordion-border);
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: var(--accordion-bg);
+  overflow: hidden;
+}
+
+body.dark .container.reference-page .accordion-section {
+  background: var(--accordion-bg);
+  border-color: var(--accordion-border);
+}
+
+/* Accordion Header */
+.container.reference-page .accordion-header {
+  padding/* Reference.css */
+
+/* Accordion Section */
+body .container.reference-page .accordion-section {
+  border: 1px solid #008080 !important;
+  border-radius: 8px !important;
+  margin-bottom: 1rem !important;
+  background: #fff !important;
+  overflow: hidden !important;
+}
+
+body.dark .container.reference-page .accordion-section {
+  background: #2a2a2a !important;
+  border-color: #003838 !important;
+}
+
+/* Accordion Header */
+body .container.reference-page .accordion-header {
+  padding: 0.75rem 1rem !important;
+  cursor: pointer !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  background-color: #008080 !important;
+  color: #fff !important;
+  transition: background-color 0.2s ease !important;
+}
+
+body.dark .container.reference-page .accordion-header {
+  background-color: #004d4d !important;
+  color: #f0f0f0 !important;
+}
+
+body .container.reference-page .accordion-header:hover {
+  background-color: #046C6C !important;
+}
+
+body.dark .container.reference-page .accordion-header:hover {
+  background-color: #003838 !important;
+}
+
+body .container.reference-page .accordion-header h3 {
+  margin: 0 !important;
+  font-size: 1rem !important;
+}
+
+/* Accordion Content */
+body .container.reference-page .accordion-content {
+  padding: 0.75rem 1rem 1rem !important;
+  background-color: #fff !important;
+}
+
+body.dark .container.reference-page .accordion-content {
+  background-color: #2a2a2a !important;
+}
+
+/* Search Bar */
+body .container.reference-page .search-bar {
+  width: 100% !important;
+  padding: 8px !important;
+  margin-bottom: 1rem !important;
+  border-radius: 8px !important;
+  border: 1px solid #ccc !important;
+}
+
+body.dark .container.reference-page .search-bar {
+  background-color: #3a3a3a !important;
+  color: #f0f0f0 !important;
+  border-color: #555 !important;
+}
+
+/* Reference List */
+body .container.reference-page .reference-list {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+  margin: 0 !important;
+}
+
+body .container.reference-page .reference-list li {
+  margin-bottom: 1rem !important;
+  line-height: 1.5 !important;
+}
+
+body .container.reference-page .reference-list strong {
+  color: #2a7ae2 !important;
+}
+
+body.dark .container.reference-page .reference-list strong {
+  color: #7ac2ff !important;
+}
+
+/* Chevron */
+body .container.reference-page .chevron {
+  font-size: 0.9rem !important;
+  margin-left: 10px !important;
+}
+
+body.dark .container.reference-page .chevron {
+  color: #f0f0f0 !important;
+}
+
+/* Container */
+body .container.reference-page {
+  max-width: 1000px !important;
+}
+
+body.dark .container.reference-page {
+  max-width: 1000px !important;
+}
+
+/* Accordion Grid */
+body .container.reference-page .accordion-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 1rem !important;
+  align-items: start !important;
+}
+
+body.dark .container.reference-page .accordion-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 1rem !important;
+  align-items: start !important;
+}
+
+/* Title */
+body.dark .container.reference-page h2 {
+  color: #f0f0f0 !important;
+}
+: 0.75rem 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-bg);
+  color: var(--header-color);
+  transition: background-color 0.2s ease;
+}
+
+body.dark .container.reference-page .accordion-header {
+  background-color: var(--header-bg);
+  color: var(--header-color);
+}
+
+.container.reference-page .accordion-header:hover {
+  background-color: var(--header-hover-bg);
+}
+
+body.dark .container.reference-page .accordion-header:hover {
+  background-color: var(--header-hover-bg);
+}
+
+.container.reference-page .accordion-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Accordion Content */
+.container.reference-page .accordion-content {
+  padding: 0.75rem 1rem 1rem;
+  background-color: var(--content-bg);
+}
+
+body.dark .container.reference-page .accordion-content {
+  background-color: var(--content-bg);
+}
+
+/* Search Bar */
+.container.reference-page .search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--search-bar-border);
+  background-color: var(--search-bar-bg);
+  color: var(--search-bar-color);
+}
+
+body.dark .container.reference-page .search-bar {
+  background-color: var(--search-bar-bg);
+  color: var(--search-bar-color);
+  border-color: var(--search-bar-border);
+}
+
+/* Reference List */
+.container.reference-page .reference-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.container.reference-page .reference-list li {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.container.reference-page .reference-list strong {
+  color: var(--strong-color);
+}
+
+body.dark .container.reference-page .reference-list strong {
+  color: var(--strong-color);
+}
+
+/* Chevron */
+.container.reference-page .chevron {
+  font-size: 0.9rem;
+  margin-left: 10px;
+  color: var(--chevron-color);
+}
+
+body.dark .container.reference-page .chevron {
+  color: var(--chevron-color);
+}
+
+/* Container */
+.container.reference-page {
+  max-width: 1000px;
+}
+
+body.dark .container.reference-page {
+  max-width: 1000px;
+}
+
+/* Accordion Grid */
+.container.reference-page .accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+body.dark .container.reference-page .accordion-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  align-items: start;
+}
+
+/* Title */
+body.dark .container.reference-page h2 {
+  color: var(--text-color);
+}
+body.dark .container, body.dark main.container {
+    background: #1a1a1a;
+    color: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    /* justify-items: center; */
+    align-items: center;
 }
