@@ -278,3 +278,9 @@ img.ytho {
 .quiz-card.flashcard .card-back {
   transform: rotateY(180deg);
 }
+.flashcard-question,
+.flashcard-answer {
+  font-size: 1.25rem;
+  text-align: center;
+  color:#00B8A9
+}

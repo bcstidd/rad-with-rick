@@ -33,7 +33,9 @@ export default function FlashcardFlip() {
                 />
               </div>
             )}
+            <div className='flashcard-question'>
             {flashcards[index].question}
+          </div>
           </div>
           <div className="card-face card-back">
             {flashcards[index].answer}
