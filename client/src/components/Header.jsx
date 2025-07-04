@@ -15,8 +15,8 @@ export default function Header() {
         <Link to="/about">About</Link>
         <Link to="/flashcards">Flashcards</Link>
         <Link to="/reference">Reference</Link>
-
+        <Link to="/machine">X-ray Machine</Link>
       </nav>
     </header>
-  )
+  );
 }

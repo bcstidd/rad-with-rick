@@ -264,6 +264,7 @@ const flashcards = [
     ],
     explanation:
       "If the beam is misaligned with the sensor, the area that was not exposed to the beam will appear white.",
+    image: "/quiz-images/cone-cut.png",
   },
   {
     question:

@@ -8,6 +8,7 @@ import Flashcards from './pages/Flashcards'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Reference from './pages/Reference'
+import Machine from './components/Machine'
 import './App.css'
 
 export default function App() {
@@ -18,7 +19,7 @@ export default function App() {
 
   useEffect(() => {
     document.body.classList.toggle('dark', isDarkMode)
-    document.body.classList.toggle('gemtone', !isDarkMode) // Gem tone when NOT dark
+    document.body.classList.toggle('gemtone', !isDarkMode) 
     localStorage.setItem('dark', isDarkMode)
   }, [isDarkMode])
 
@@ -47,6 +48,7 @@ function AppLayout({ isDarkMode, toggleDarkMode }) {
               <Route path="/flashcards" element={<FlashcardModeSelect />} />
               <Route path="/flashcards/quiz" element={<Flashcards />} />
               <Route path="/flashcards/study" element={<FlashcardFlip />} />
+              <Route path="/machine" element={<Machine />} />
               <Route path="/reference" element={<Reference />} />
             </Routes>
           </div>
