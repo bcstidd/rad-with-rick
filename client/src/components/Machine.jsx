@@ -209,7 +209,9 @@ const Machine = () => {
           <p>Score: {score}</p>
           {quizFeedback && (
             <p className={`machine-quiz-feedback ${quizFeedback}`}>
-              {quizFeedback === "correct" ? "✅ Correct!" : "❌ Try again!"}
+              {quizFeedback === "correct"
+                ? "✅ Correct! Next part loaded."
+                : `❌ That’s the ${selectedPart}. Try again.`}
             </p>
           )}
         </div>
