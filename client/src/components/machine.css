@@ -37,12 +37,14 @@
 }
 
 .part-info-box {
-  margin-top: 30px;
+  margin-top: 1rem;
   padding: 20px;
   border-radius: 8px;
   background-color: #f9f9f9;
   max-width: 600px;
-  margin: 30px auto;
+  margin: 1rem auto;
+  max-height: 40vh;
+  overflow: auto;
   text-align: left;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   color: #008080;
