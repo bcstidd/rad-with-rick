@@ -59,28 +59,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.5rem;
-  background-color: #f8f9fa;
-  color: #000;
-  padding: 1.25rem 1.5rem;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.75rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
-  max-width: 600px;
-  margin: 0 auto 1.5rem;
+
 }
 
 body.dark .machine-quiz-info {
   background-color: #003838;
   color: #f0f0f0;
   border-color: #004d4d;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
-}
 
-.machine-quiz-part {
-  font-weight: 600;
-  color: #DE9250;
-  font-size: 1.2rem;
 }
 body.dark .machine-quiz-part {
   color: #ffb162;
@@ -88,8 +74,7 @@ body.dark .machine-quiz-part {
 
 .machine-quiz-feedback {
   font-weight: 600;
-  margin-top: 0.75rem;
-  font-size: 1rem;
+
 }
 .machine-quiz-feedback.correct {
   color: #2E8B57; /* green tone */
@@ -100,17 +85,5 @@ body.dark .machine-quiz-part {
 
 .machine-btn {
   margin: 0.5rem;
-  background-color: #046C6C;
-  color: #fff;
-  padding: 0.6rem 1.2rem;
-  border: none;
-  border-radius: 0.5rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.machine-btn:hover {
-  background-color: #008080;
 }
 

@@ -543,7 +543,7 @@ nav {
 
 body.dark, .screen-body
  {
-    background: #81171B;
+    background: #046C6C;
     padding: 2rem;
     border-radius: 1rem;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
@@ -571,10 +571,10 @@ body.dark, .screen-body
     @media (max-width: 600px) {
       body.dark .screen-body /* Target only screen-body in dark mode */
        {
-          background: #81171B; /* Dark Red/Maroon for dark mode on small screens */
+          background: #004d4d; 
           padding: 2rem;
           border-radius: 1rem;
           box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
       }
-    }
+    
 }
