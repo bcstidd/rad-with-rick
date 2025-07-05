@@ -51,7 +51,7 @@ body.dark .quiz-header {
   color: #2a2a2a;
 }
 .mode-text {
-  color: #DE9250;
+  color: #de9250;
   font-size: xx-large;
 }
 body.dark .mode-title {
@@ -66,7 +66,7 @@ p.progress {
   font-weight: 600;
 }
 body.dark .progress {
-  color: #00B8A9;
+  color: #00b8a9;
 }
 body.dark p.progress {
   font-weight: 600;
@@ -81,7 +81,7 @@ body.dark p.progress {
   margin-left: 1rem;
 }
 body.dark .score {
-  background-color: #046C6C;
+  background-color: #046c6c;
   color: white;
 }
 
@@ -108,7 +108,7 @@ body.dark .score {
   cursor: pointer;
 }
 .shuffle-btn:hover {
-  background-color: #DE9250;
+  background-color: #de9250;
 }
 .nav-group {
   display: flex;
@@ -116,7 +116,7 @@ body.dark .score {
 }
 .prev-btn,
 .next-btn {
-  background-color: #046C6C;
+  background-color: #046c6c;
   color: white;
   padding: 0.6rem 1.2rem;
   border: none;
@@ -179,7 +179,7 @@ body.dark .score {
 }
 
 body.dark .quiz-card.flipped {
-  background-color: #046C6C;
+  background-color: #046c6c;
   color: #f0f0f0;
   border-color: #003838;
 }
@@ -203,7 +203,6 @@ body.dark .quiz-card.flipped {
   padding: 2px;
   margin: 16px;
   font-weight: 800;
-
 }
 img.ytho {
   justify-self: center;
@@ -282,5 +281,5 @@ img.ytho {
 .flashcard-answer {
   font-size: 1.25rem;
   text-align: center;
-  color:#00B8A9
+  color: #00b8a9;
 }

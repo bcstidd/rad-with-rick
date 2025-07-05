@@ -133,10 +133,19 @@ const Machine = () => {
         });
       }
     }
-    updateSize();
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
   }, []);
+
+  // Update size when image loads
+  function handleImageLoad() {
+    if (imgRef.current) {
+      setImgSize({
+        width: imgRef.current.offsetWidth,
+        height: imgRef.current.offsetHeight,
+      });
+    }
+  }
 
   // Start quiz
   function startQuiz() {
@@ -203,6 +212,7 @@ const Machine = () => {
           src="/machine/machine-lines.svg"
           alt="X-ray Machine"
           className="machine-image"
+          onLoad={handleImageLoad}
         />
         {machineParts.map((part) => (
           <button
