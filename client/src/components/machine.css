@@ -99,3 +99,33 @@ body.dark .machine-quiz-part {
   margin: 0.5rem;
 }
 
+@media (max-width: 600px) {
+  .machine-quiz-info,
+  .part-info-box {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .hotspot-button {
+    width: 10px;
+    height: 10px;
+  }
+
+  .machine-btn {
+    display: block;
+    width: 100%;
+    margin: 0.75rem 0;
+    font-size: 1.1rem;
+    padding: 0.75rem;
+  }
+
+  .machine-quiz-info h3,
+  .part-info-box h3 {
+    font-size: 1.25rem;
+  }
+
+  .machine-image-wrapper {
+    width: 100%;
+  }
+}
+
