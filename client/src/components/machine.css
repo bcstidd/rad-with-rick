@@ -105,8 +105,9 @@ body.dark .machine-quiz-part {
   }
 
   .hotspot-button {
-    width: 10px;
-    height: 10px;
+    /* Slightly smaller hotspots to reduce overlap on small screens */
+    width: 6px;
+    height: 6px;
   }
 
   .machine-btn {
