@@ -57,15 +57,19 @@
 /* Quiz Mode Info */
 .machine-quiz-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 5;
   background-color: #eee;
   color: #000;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
+  margin-bottom: 0.5rem;
   border: 1px solid #ccc;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
 }
 
 body.dark .machine-quiz-info {
