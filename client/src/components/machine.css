@@ -19,13 +19,11 @@
 
 .hotspot-button {
   position: absolute;
-  width: 2px; /* Adjust size of the hotspot as needed */
-  height: 2px; /* Adjust size of the hotspot as needed */
+  width: 5px; /* Size of the hotspot */
+  height: 5px; /* Size of the hotspot */
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
   z-index: 10; /* Ensure hotspots are above the image */
-  width: 5px;
-  height: 5px;
 }
 
 .hotspot-button.default {
