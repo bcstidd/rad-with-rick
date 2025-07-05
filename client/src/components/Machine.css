@@ -1,0 +1,50 @@
+/* client/src/components/machine.css */
+
+.machine-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.machine-image-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.machine-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hotspot-button {
+  position: absolute;
+  width: 40px; /* Adjust size of the hotspot as needed */
+  height: 40px; /* Adjust size of the hotspot as needed */
+  border-radius: 50%; /* Makes it a circle */
+  border: 2px solid white;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  z-index: 10; /* Ensure hotspots are above the image */
+}
+
+.hotspot-button.default {
+  background: rgba(0, 123, 255, 0.5);
+}
+
+.hotspot-button.selected {
+  background: rgba(255, 215, 0, 0.7);
+  transform: scale(1.1);
+}
+
+.part-info-box {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 30px auto;
+  text-align: left;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
