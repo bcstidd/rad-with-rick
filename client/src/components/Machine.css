@@ -20,23 +20,22 @@
 
 .hotspot-button {
   position: absolute;
-  width: 20px; /* Adjust size of the hotspot as needed */
+  width: 10px; /* Adjust size of the hotspot as needed */
   height: 20px; /* Adjust size of the hotspot as needed */
   /* border-radius: 50%;  */
-  border: 2px solid white;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
   z-index: 10; /* Ensure hotspots are above the image */
 }
 
 .hotspot-button.default {
-  background: rgba(0, 123, 255, 0.5);
+  background-color: transparent;
 }
 
 .hotspot-button.selected {
-  background: rgba(255, 215, 0, 0.7);
-  transform: scale(1.1);
+  background-color: #ccc;
 }
+  
 
 .part-info-box {
   margin-top: 30px;
