@@ -1,13 +1,11 @@
-// src/components/Header.jsx
-
 import { Link } from 'react-router-dom'
-import logo from '/icons/favicon.png'
+import radio from '/icons/radio.png'
 
 export default function Header() {
   return (
     <header className="header">
       <h1 className="logo-title">
-        <img src={logo} alt="Logo" className="logo-img" />
+        <img src={radio} alt="Logo" className="logo-img" />
         RWR
       </h1>
       <nav className="nav">
