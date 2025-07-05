@@ -137,6 +137,14 @@ const Machine = () => {
     return () => window.removeEventListener("resize", updateSize);
   }, []);
 
+  // Reset feedback when a new quiz part is chosen
+  useEffect(() => {
+    if (quizPart) {
+      const timeout = setTimeout(() => setQuizFeedback(""), 1000);
+      return () => clearTimeout(timeout);
+    }
+  }, [quizPart]);
+
   // Update size when image loads
   function handleImageLoad() {
     if (imgRef.current) {
